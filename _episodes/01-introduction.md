@@ -1,11 +1,11 @@
 ---
 title: "Introduction"
-teaching: 0
+teaching: 10
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "Why search for heavy resonances?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand motivation for physics at high masses/scales."
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
