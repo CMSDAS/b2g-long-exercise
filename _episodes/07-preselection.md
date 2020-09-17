@@ -33,8 +33,8 @@ from the interaction of a bottom quark and a gluon, will this production mode yi
 What about a W jet? How does this impact the region of the detector needed? What eta and phi in the detector do we need? 
 Think about this while looking at the Feynman diagram and the signal topology.
 >
-> <img src="../fig/bstarFeynman.png" alt="bstarFeynman" style="width:800px"> 
-> <img src="../fig/bstarTopo.png" alt="bstarTopo" style="width:800px"> 
+> <img src="../fig/bstarFeynman.png" alt="bstarFeynman" style="width:200px"> 
+> <img src="../fig/bstarTopo.png" alt="bstarTopo" style="width:200px"> 
 > 
 > > ## Solution
 > > The production mode does not have any characteristic forward jets, but the final state has two jets. The top quark decays to a 
@@ -52,7 +52,16 @@ Think about this while looking at the Feynman diagram and the signal topology.
 
 
 
+
 ## Simple Selections
+
+The preselection should also include a set of simple selections based on our physics knowledge of the signal topology. Consider a 
+heavy resonance decaying to two Z bosons that produce jets to create a dijet final state. In this case, the energy of the collision
+would go into producing a heavy resonance with little transverse momentum, so conservation of momentum tells us that the jets should
+be well separated in phi, ideally they should have a separation of pi in phi.
+
+In the preselection, these selections should be relatively light and simple stacked "N-1" histograms should be utilized to ensure 
+that the preselection is not causing a signal loss. More about these plots is described below.
 
 # Applying our selection and monitoring the MC response
 
