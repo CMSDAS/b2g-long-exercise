@@ -1,17 +1,22 @@
 ---
 title: "Background estimation"
 teaching: 10
-exercises: 0
+exercises: 50
 questions:
-- "How can we estimate the backgrounds?"
+- "Now with a final signal selection, how can we estimate the backgrounds?"
 - "What are commonly used background estimation methods?"
+- "When are data-driven methods used and why?"
 objectives:
-- "Implement a background estimation technique."
-- "Be able to compare different approaches (e.g. data-driven vs. simulation-assisted)."
+- "Identify final background processes"
+- "Decide whether MC can be used as is, or if data-driven method would be better."
+- "Define control regions."
+- "Implement a background estimation technique for each process."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "BGs: ttbar, Z+Jets, QCD, ttZ"
+- "MC for ttbar is ok. QCD is notoriously bad, so we use data-driven methods." 
+- "Since we are confusing the 'jets' part of Z+Jets with a top in the SR, this corner of the simulation suffers from the same aches as QCD and we also use a data-driven technique."
+- "2DAlphabet is a novel technique to simultaneously estimate QCD and Z+Jets backgrounds."
 ---
-FIXME
 
 {% include links.md %}
 
