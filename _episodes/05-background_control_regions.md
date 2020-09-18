@@ -2,6 +2,7 @@
 title: "Controlling the background"
 teaching: 15
 exercises: 45
+start: true
 questions:
 - "What is the background to the search?"
 - "How can we model the background processes affecting our measurement?"
