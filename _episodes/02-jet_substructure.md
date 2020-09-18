@@ -2,6 +2,10 @@
 title: "Diving into jet substructure"
 teaching: 30
 exercises: 90
+start = true
+assign lesson_number = 2
+assign day = 2
+assign multiday = false
 questions:
 - "What is jet substructure?"
 - "What does the jet substructure look like for the signal?"
