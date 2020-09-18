@@ -1,3 +1,4 @@
+{% start = true %}
 ---
 title: "Diving into jet substructure"
 teaching: 30
