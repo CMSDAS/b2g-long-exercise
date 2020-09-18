@@ -4,6 +4,9 @@ teaching: 30
 exercises: 90
 start: true
 star_time: 600
+lesson_number: 2
+day: 2 
+multiday: false
 questions:
 - "What is jet substructure?"
 - "What does the jet substructure look like for the signal?"
