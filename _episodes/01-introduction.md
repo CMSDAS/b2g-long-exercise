@@ -2,6 +2,8 @@
 title: "Introduction to All-Hadronic b*->tW and Useful Tools Like CI/CD"
 teaching: 20
 exercises: 40
+start: true
+start_time: 660
 questions:
 - "Who are you?" 
 - "What is this exercise about?"
