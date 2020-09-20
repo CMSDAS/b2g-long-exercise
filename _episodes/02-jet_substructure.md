@@ -1,9 +1,7 @@
 ---
 title: "Diving into jet substructure"
-teaching: 30
-exercises: 90
-start: true
-star_time: 600
+teaching: 15
+exercises: 45
 lesson_number: 2
 day: 2 
 multiday: false
@@ -23,6 +21,4 @@ keypoints:
 - "Traditional top-tagging typically uses tau_32 and jet mass, whereas for W-tagging it's tau_21 and the jet mass."
 ---
 *N-subjetiness*
-
-{% include links.md %}
 
