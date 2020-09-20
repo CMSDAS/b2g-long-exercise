@@ -2,7 +2,6 @@
 title: "Introduction to All-Hadronic b*->tW and Useful Tools Like CI/CD"
 teaching: 30
 exercises: 30
-start_time: 900
 questions:
 - "Who are the facilitators and team members?" 
 - "What is this exercise about, and are our expectation?"
@@ -126,9 +125,6 @@ The b* resonance is a beyond the standard model (BSM) particle that can be produ
 
 <img src="../fig/bstarFeynman.png" alt="bstarFeynman" style="width:100px"> 
 
-In upcoming episodes we will ivestigate in detail the topology of our signal, as well as possible background standard model (SM) processes that we must model and estimate their expected rates for our search.
+In upcoming episodes we will investigate in detail the topology of our signal, as well as possible background standard model (SM) processes that we must model and estimate their expected rates for our search.
 
 *Would be nice to include more high-level info here*
-
-{% include links.md %}
-
