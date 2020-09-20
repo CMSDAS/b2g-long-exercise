@@ -21,4 +21,3 @@ keypoints:
 - "Traditional top-tagging typically uses tau_32 and jet mass, whereas for W-tagging it's tau_21 and the jet mass."
 ---
 *N-subjetiness*
-
