@@ -11,6 +11,3 @@ objectives:
 keypoints:
 - "We can define tagger scale factors by measuring the efficiency of the tagger in t+W enriched regions."
 ---
-
-{% include links.md %}
-
