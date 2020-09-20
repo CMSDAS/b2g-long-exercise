@@ -1,7 +1,7 @@
 ---
 title: "Systematic uncertainties affecting signal and background"
 teaching: 10
-exercises: 20
+exercises: 50
 questions:
 - "What are systematic uncertainties affecting the signal modelling?"
 - "What are systematic uncertainties affecting the background modelling and estimation?"
