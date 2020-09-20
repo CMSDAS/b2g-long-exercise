@@ -1,7 +1,7 @@
 ---
 title: "Background estimation"
 teaching: 10
-exercises: 20
+exercises: 50
 questions:
 - "Now with a final signal selection, how can we estimate the backgrounds?"
 - "What are commonly used background estimation methods?"
