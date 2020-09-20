@@ -1,8 +1,7 @@
 ---
 title: "Controlling the background"
-teaching: 15
-exercises: 45
-start: true
+teaching: 10
+exercises: 20
 questions:
 - "What is the background to the search?"
 - "How can we model the background processes affecting our measurement?"
@@ -23,6 +22,3 @@ keypoints:
 - "Control regions are used to study specific backgrounds in a kinematic region orthogonal to the signal regions; we test our background estimation in CRs and apply corrections needed there to the SR."
 - "Validation regions are designed to lie orthgonal but between CRs and SRs, perhaps with lower target BG purity, to test the corrections extracted from the CR that will be applied to SRs."
 ---
-
-{% include links.md %}
-
