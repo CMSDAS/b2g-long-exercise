@@ -1,7 +1,7 @@
 ---
 title: "Optimising the analysis"
 teaching: 10
-exercises: 50
+exercises: 20
 questions:
 - "What aspects of our analysis do we want to optimize?"
 - "How can we quantify selections to help decide SR/CR definitons."
@@ -17,6 +17,3 @@ keypoints:
 - "The traditional way of optimizing selections is to apply N-1 (all-but one) cuts and findng peak of significance curve in removed cut."
 - "Boosted Decision Trees and other multivariate optimization techniques are also widely used."
 ---
-
-{% include links.md %}
-
