@@ -17,6 +17,3 @@ keypoints:
 - "Jets are clustered Particle Flow candidates interpreted as a 4-vector with momenta, energy, and mass."
 - "The resonance searched decays to all particles in final state, thus if we add all jets in vector-form we can reconstruct the resonance."
 ---
-
-{% include links.md %}
-
