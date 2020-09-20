@@ -2,6 +2,7 @@
 title: "Introduction to All-Hadronic b*->tW and Useful Tools Like CI/CD"
 teaching: 30
 exercises: 30
+start_time: 900
 questions:
 - "Who are the facilitators and team members?" 
 - "What is this exercise about, and are our expectation?"
