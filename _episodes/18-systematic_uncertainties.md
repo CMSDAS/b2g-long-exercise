@@ -1,7 +1,7 @@
 ---
 title: "Systematic uncertainties affecting signal and background"
-teaching: 20
-exercises: 40
+teaching: 10
+exercises: 20
 questions:
 - "What are systematic uncertainties affecting the signal modelling?"
 - "What are systematic uncertainties affecting the background modelling and estimation?"
@@ -14,6 +14,3 @@ keypoints:
 - "Since this is an all-hadronic search the corrections to the Jet Energy Scale are important."
 - "Combine is a software package that uses a 'card' (parameter set) to perform the systematic variations to the analysis."
 ---
-
-{% include links.md %}
-
