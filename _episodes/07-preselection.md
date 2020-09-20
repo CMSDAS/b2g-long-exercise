@@ -1,7 +1,7 @@
 ---
 title: "Developing a pre-selection"
 teaching: 10
-exercises: 20
+exercises: 50
 questions:
 - "What cuts could you apply that follow the signal topology"
 - "What are background processes that could enter this selection?"
