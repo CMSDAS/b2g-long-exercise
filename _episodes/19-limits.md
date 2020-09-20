@@ -16,6 +16,3 @@ keypoints:
 - "We combine the systematic variations as a 1/2-sigma envelope around nominal expectation to quantify the confidence of our measurement."
 - "After unblinding, if we have a down-fluctuation of data the expected exclusion appears stronger and vice-versa with up-fluctionations and apparently weak exclusions."
 ---
-
-{% include links.md %}
-
