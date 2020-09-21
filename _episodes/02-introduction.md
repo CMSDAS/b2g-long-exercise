@@ -78,6 +78,7 @@ The team members are:
 
 The general steps to follow here are:
 - (Before developing) Ensure the code you have is up-to-date with 
+
 ~~~bash
 cd ~/nobackup/CMSVDAS2020/<nameYourTutorialPackage>
 git fetch --all
@@ -93,7 +94,9 @@ git push -u origin <nameNewBranch>
 <Make Merge(Pull) Request through browser onto main b2g-long-exercises repo>
 ~~~
 {: .source}
+
 - (If already developed, but changes in upstream branch) You may have to rebase your changes on top of upstream commit.
+
 ~~~bash
 cd ~/nobackup/CMSVDAS2020/<nameYourTutorialPackage>
 <Previous code development>
@@ -111,6 +114,7 @@ git push -u origin <nameNewBranch>
 {: .source}
 
 Now, let's try to pull changes + add your information. Check your websites to make sure the changes look like what you want, it may take a few minutes for the build to update on the site. Before finishing this part of the episode, let's make sure all repositories are up to date and have the correct latest commit:
+
 ~~~bash
 cd ~/nobackup/CMSVDAS2020/<nameYourTutorialPackage>
 git remote -v
