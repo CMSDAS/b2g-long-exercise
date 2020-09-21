@@ -26,10 +26,12 @@ Sometimes, we want to capture the entire decay of a heavy object using a larger-
 
 > ## Question: What is are the opening angles for 200 GeV tops? What about 200 GeV Ws? What if they are at high pT ~ 1TeV?
 >
-> The useful expression here is R<2m/pT. For a 200 GeV top, R<346/200 -> R<1.73. At the same transverse momentum, a W opens at R<160/200 -> R<0.8. 
-> At 1 TeV, the top decays in a cone of about R<0.35 and for the 1 TeV W it is R<0.16. 
-> As you may notice, high pT heavy (boosted) objects tend to be well encapsulated by R=0.8 jets. But, at very high pT the decaying objects are quite columnated.
-> The choice of R-parameter for your jet collection, in a way, defines the lower bound of the pT you are sensitive to.
+> > ## Solution
+> >
+> > The useful expression here is R<2m/pT. For a 200 GeV top, R<346/200 -> R<1.73. At the same transverse momentum, a W opens at R<160/200 -> R<0.8. 
+> > At 1 TeV, the top decays in a cone of about R<0.35 and for the 1 TeV W it is R<0.16. 
+> > As you may notice, high pT heavy (boosted) objects tend to be well encapsulated by R=0.8 jets. But, at very high pT the decaying objects are quite columnated.
+> > The choice of R-parameter for your jet collection, in a way, defines the lower bound of the pT you are sensitive to.
 > {: .solution}
 {: .challenge}
 
@@ -40,4 +42,4 @@ Jet substructure is a family of analysis techniques that studies the detailed st
 - Softdrop mass is not quite a traditional substructre variable, but it is commonly used in conjunction with the above. Soft-drop is a technique of jet grooming, in which constituents of a jet are removed depending on their momenta and distance from the jet's centroid. The assumption is that soft radiation, far from the jet axis, is not likely to be part of the hard parton hadronization and thus dropped. [Link to paper](https://arxiv.org/abs/1402.2657)
 - b-discriminant: another not-so-traditional substructure variable that quantifies how likely a jet (or its constituents) contains a b-hadron. This is done by evaluating the secondary vertex information, impact parameters, and other observables that try to identify a b-hadron decay. The higher the number, the more likely it is to contain a b-hadron.
 
-<img src="../fig/NSubjetinessCartoon.png" alt="bstarFeynman" style="width:100px">  
+<img src="../fig/NSubjetinessCartoon.png" alt="NSubjetinessCartoon" style="width:500px">  
