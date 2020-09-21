@@ -4,5 +4,7 @@ teaching: 60
 exercises: 0
 start: true
 start_time: 600
+keypoints:
+- "Here is a [link](https://indico.cern.ch/event/886923/timetable/#day-2020-09-25) to the indico page for Friday's plenary."
 ---
 From 10-11h there will be a DAS Plenary, please tune in to that.
