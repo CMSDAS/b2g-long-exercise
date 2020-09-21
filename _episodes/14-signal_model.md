@@ -1,7 +1,7 @@
 ---
 title: "Modelling the signal in RooFit and Combine"
 teaching: 10
-exercises: 0
+exercises: 20
 questions:
 - "How do I use the signal samples in a statistical analysis?"
 objectives:
@@ -12,6 +12,3 @@ keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
 FIXME
-
-{% include links.md %}
-
