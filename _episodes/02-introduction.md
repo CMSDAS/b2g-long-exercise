@@ -4,9 +4,9 @@ teaching: 30
 exercises: 30
 questions:
 - "Who are the facilitators and team members?" 
-- "What is this exercise about, and are our expectation?"
+- "What is this exercise about, and what should we expect from the next few days?"
 - "Why search for heavy resonances?"
-- "What is CI/CD?" 
+- "What is version control and CI/CD?" 
 objectives:
 - "Familiarize ourselves with peers and resources."
 - "Contexualize a CMS-style search and its stages"
@@ -21,13 +21,13 @@ keypoints:
 ## Introductions and Using Git
 
 First we can begin with some introductions. The facilitators are: 
-- Johan Sebastian Bonilla Castron, Postdoc at the University of California -- Davis, they work on all-hadronic VLQ and ttbar resonance searches as well as CSC upgrades.
-- Lucas Corcodilos, Graduate Student at John Hopkins University, he works on all-hadronic b*->tW search. 
-- John Hakala, Postdoc at the University of Virginia, he works on Leptophobic Z’ cascade decay search.
-- Brendan Regnery, Graduate Student at the University of California -- Davis, he works on all=hadronic VLQ search and GEM upgrades. 
+- Johan Sebastian Bonilla Castro, Postdoc at the University of California -- Davis, they work on all-hadronic VLQ and ttbar resonance searches as well as CSC upgrades.
+- Lucas Corcodilos, Graduate Student at John Hopkins University, he works on an all-hadronic b*->tW search. 
+- John C. Hakala, Postdoc at the University of Virginia, he works on a leptophobic Z’ cascade decay search.
+- Brendan Regnery, Graduate Student at the University of California -- Davis, he works on an all=hadronic VLQ search and GEM upgrades. 
 
 Before moving on to the introductions of the participants, let's all get on the same page and fork+clone the exercise's repository. 
-First, bookmark the website GitHub repository https://github.com/CMSDAS/b2g-long-exercise and the code on GitLab https://gitlab.cern.ch/cms-b2g/b2g-long-exercise-code
+First, bookmark the [website GitHub repository](https://github.com/CMSDAS/b2g-long-exercise) and the [code repository on GitLab](https://gitlab.cern.ch/cms-b2g/b2g-long-exercise-code).
 When you navigate to both of these websites, click on the 'Fork' button towards the top-right of the page. (You will need to be logged into your GitHub/GitLab accounts)
 
 > ## Question: What is the difference between GitHub and GitLab
@@ -69,7 +69,7 @@ To combat these problems, we agree to have a set of 'good-practices' for keeping
 
 Version control is a way of tracing the history of software projects by recording changes encoded in 'commits/pushes'. We will be using CERN's GitLab to develop our code. You may notice some of the code we will use is on GitHub instead, and there are reason for that but for our purposes we like the CI/CD interface of GitLab better. CI/CD (Continuous Integrationa and Deployment) is a technique for developing tests on changes (pushes) to the repository. One can, for example, create a test that compiles the code and returns and error if it cannot; one can also create tests for enforcing code style, or execute sample runs of analysis code. The sky is the limit for how fancy you want to make your CI/CD, what do you think should be implemented for our code?
 
-Both repositories have some amount of development done to them. There will be times where we ask you to use a script already written in the package, other times we may ask you to develop your own. One of the things that has been done is the webpage you are viewing here. By forking the repository, you have made your own copy of the code which generates this website, which means you have a tutorial website of your own! (Assuming you haven't already developed a website with GitHub) To check out your website, go to https://<GitHubUsername>.github.io/b2g-long-exercise/
+Both repositories have some amount of development done to them. There will be times where we ask you to use a script already written in the package, other times we may ask you to develop your own. One of the things that has been done is the webpage you are viewing here. By forking the repository, you have made your own copy of the code which generates this website, which means you have a tutorial website of your own! (Assuming you haven't already developed a website with GitHub) To check out your website, go to https://GitHubUsername.github.io/b2g-long-exercise/
  
 Next thing we would like to do is a series of introductions from the participants. After the introductions, we will practice working with version control (git) to add your names (and a few words, if you'd like) to the section below: 
 
