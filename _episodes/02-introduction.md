@@ -1,5 +1,5 @@
 ---
-title: "Introduction to All-Hadronic b*->tW and Useful Tools Like CI/CD"
+title: "Introduction to All-Hadronic b*->tW and Useful Tools"
 teaching: 30
 exercises: 20
 questions:
