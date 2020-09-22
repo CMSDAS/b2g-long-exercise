@@ -2,9 +2,19 @@
 title: Setup
 ---
 
-Setup for TIMBER on lxplus
+Logging in and creating a working directory
+```bash
+ssh -Y <username>@lxplus.cern.ch
+# You can also log into the CMSLPC with ssh -Y <username>@cmslpc-sl7.fnal.gov
+mkdir ~/CMSVDAS2020
+# At the LPC you can use the ~/nobackup/ space 
+```
+
+
+Setup for TIMBER on lxplus (Should also work on CMSLPC)
 
 ```bash
+cd ~/CMSVDAS2020
 export SCRAM_ARCH=slc7_amd64_gcc820
 cmsrel CMSSW_11_0_1
 cd CMSSW_11_0_1/src
@@ -37,6 +47,7 @@ Now copy the public key content and store it on gitHub under "settings -> SSH an
 
 Setup for 2D Alphabet on lxplus 
 ```bash
+cd ~/CMSVDAS2020
 export SCRAM_ARCH=slc7_amd64_gcc700
 cmsrel CMSSW_10_6_14
 cd CMSSW_10_6_14/src
