@@ -24,6 +24,17 @@ cd BstarToTW_CMSDAS2020
 python bs_select.py -i /eos/home-l/lcorcodi/Storage/rootfiles/BprimeLH1200_bstar16.root -y 16
 ```
 
+Create a public/private key on lxplus for use with gitHub.
+WARNING: Never put your private key `id_rsa` in any public space!
+```bash
+ssh-keygen
+# enter optional file name and password
+# press enter with empty to create the key without a password and default name
+cat ~/.ssh/ida_rsa.pub #this is your public key
+```
+Now copy the public key content and store it on gitHub under "settings -> SSH and GPG keys"
+
+
 Setup for 2D Alphabet on lxplus 
 ```bash
 export SCRAM_ARCH=slc7_amd64_gcc700
