@@ -41,5 +41,3 @@ Test command for 2D Alphabet
 cd 2DAlphabet
 python run_MLfit.py unit_tests/configs/input_lin100kv10k.json --tag=test
 ```
-
-{% include links.md %}
