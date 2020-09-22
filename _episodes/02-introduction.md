@@ -137,6 +137,6 @@ If you do not feel comfortable with git yet, that is ok. This is a learning expe
 ## The All-Hadronic b*->tW final state
 The b* resonance is a beyond the standard model (BSM) particle that can be produced at the LHC when a b-quark from the incoming proton's quark-sea interacts with a gluon from the other proton to form an excited resonance that decays to a top-quark and W-boson. The top quark almost always decayse to t->b+W, thus in the final state we have a jet from a b-decay with the W decay jets from the top and the prompt W from the b* decay. It is then the decay channels of the W bosons that determine the final state of the process. In this exercise we will focus on the all-hadronic channel.
 
-<img src="../fig/bstarFeynman.png" alt="bstarFeynman" style="width:100px"> 
+<img src="../fig/bstarFeynman.png" alt="bstarFeynman" style="width:800px"> 
 
 In upcoming episodes we will investigate in detail the topology of our signal, as well as possible background standard model (SM) processes that we must model and estimate their expected rates for our search.
