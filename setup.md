@@ -5,6 +5,7 @@ title: Setup
 Setup for TIMBER on lxplus
 
 ```bash
+export SCRAM_ARCH=slc7_amd64_gcc820
 cmsrel CMSSW_11_0_1
 cd CMSSW_11_0_1/src
 cmsenv
