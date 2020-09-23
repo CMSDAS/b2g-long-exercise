@@ -68,15 +68,15 @@ the analysis while still preserving the signal region.
 
 Consider a heavy resonance decaying to two Z bosons that produce jets to create a dijet final state. In this case, the energy of the 
 collision would go into producing a heavy resonance with little transverse momentum, so conservation of momentum tells us that the jets should
-be well separated in phi, ideally they should have a separation of pi in phi. Therefore placing a selection of delta phi > pi/2 should 
+be well separated in phi, ideally they should have a separation of pi in phi. Therefore placing a selection of \delta \phi > \pi/2 should 
 not cut out signal, but will reduce the number of events passed on to the next stage. This also a good stage to place a lower limit on 
 the jet p<sub>T</sub>.  
 
 A jet originating from a Z boson should also have two "prongs" (regions of energy in the calorimeter), these "prongs" are part of the jet
-substructure discussed in the earlier lessons. For a two pronged jet like a Z jet, it is good to place a lower limit on the tau 21 ratio. 
+substructure discussed in the earlier lessons. For a two pronged jet like a Z jet, it is good to place a lower limit on the \tau<sub>21</sub> ratio. 
 Another useful substructure variable to use in the preselection is the softdrop mass. The softdrop algorithm will help to reduce the amount
 of pileup that is used when measuring the jet mass. The preselection is a good place to define a wide softdrop mass region. For this example,
-a wide region around the W boson mass would be ideal, such as 65 < softdrop mass < 115 GeV. 
+a wide region around the W boson mass would be ideal, such as 65 < m<sub>SD</sub> < 115 GeV. 
 
 It is important to emphasize that the preselections should be relatively light. It is important to check that the preselection is not eliminating
 large amounts of signal. A good way to monitor this is to utilize stacked "N-1" histograms. More about these plots is described below.
@@ -88,8 +88,8 @@ delta phi or pT criteria? What about substructure?
 > 
 > > ## Solution
 > > In this signal topology the t and W should be well separated, so a light delta phi cut should be placed. Think about a reasonable 
-selection and investigate the result in the N-1 exercise. Same for the jet pT. Both the top jet and the W jet should have substructure.
-> > The top jet should have three prongs and W jet should have two prongs. Think about the softdrop regions and n-subjettiness (tau) 
+selection and investigate the result in the N-1 exercise. Same for the jet p<sub>T</sub>. Both the top jet and the W jet should have substructure.
+> > The top jet should have three prongs and W jet should have two prongs. Think about the softdrop regions and n-subjettiness (\tau) 
 ratios that should be used and investigate them in the N-1 exercise.
 > > {: .source}
 > {: .solution}
@@ -127,7 +127,7 @@ displaying the delta phi between the leading and subleading jet.
 > > a.Cut('filters',a.GetFlagString(flags))
 > > ~~~
 > > 
-> > Now that these filters have been applied, make the stacked histogram in delta phi
+> > Now that these filters have been applied, make the stacked histogram in \delta \phi
 > > 
 > > {: .source}
 > {: .solution}
