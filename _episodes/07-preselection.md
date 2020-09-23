@@ -16,20 +16,20 @@ keypoints:
 # Introduction
 
 A preselection serves two purposes, first to ensure that passing events only utilize a "good" region of the detector with
-appropriate filters and second to start applying simple selections motivated by the physics of the signal topology. 
+appropriate noise filters and second to start applying simple selections motivated by the physics of the signal topology. 
 
 ## Defining a "Good" Region of the Detector
 
 A "good" region of the detector depends heavily on the signal topology. The muon system and tracker extend to about 
-eta = 2.4 while the calorimeter extends to eta = 3.0 with the forward calorimeter extending further. Thus, if the signal
-topology relies heavily on tracking or muons, then a useful preselection would limiting the region to eta < 2.4. Some 
+|\eta| = 2.4 while the calorimeter extends to |\eta| = 3.0 with the forward calorimeter extending further. Thus, if the signal
+topology relies heavily on tracking or muons, then a useful preselection would limiting the region to |\eta| < 2.4. Some 
 topologies, like vector boson fusion (commonly called VBF) have two forward (high eta) jets, so placing a preselection 
 that requires two forward jets is a useful preselection.
 
 > ## Discuss (5 min)
 > Now, let's take a more detailed look at our signal topology and see how it fits in with the detector. The b-star is produced 
 from the interaction of a bottom quark and a gluon, will this production mode yield any characteristic forward jets?
-> In this topology, the b-star decays to jet from a W boson and jet from top quark. What is characteristic of a top jet decay?
+> In this topology, the b-star decays to a jet from a W boson and a jet from a top quark. What is characteristic of a top jet?
 What about a W jet? How does this impact the region of the detector needed? What eta and phi in the detector do we need? 
 Think about this while looking at the Feynman diagram and the signal topology.
 >
@@ -41,15 +41,23 @@ Think about this while looking at the Feynman diagram and the signal topology.
 > > b jet and W jet, where the b jet is typically identified by making use of it's characteristic secondary vertex. This secondary
 > > vertex is identified in the tracker. Both the W jet and top jet have unique substructure that can be used to distinguish them 
 > > from QCD jets. Therefore it is crucial to use a region of the detector with good tracking and granular calorimetery,so we should
-> > restrict |eta| < 2.4. There are no detector differences in phi that should impact this search, so there should be no restriction
+> > restrict |\eta| < 2.4. There are no detector differences in phi that should impact this search, so there should be no restriction
 > > in phi.
 > > {: .source}
 > {: .solution}
 > {: .source}
 {: .callout}
 
-## Finding Appropriate Filters
+## Finding Appropriate MET Filters
 
+Missing transverse momentum (called MET) is used to identify detector noise and MET filters are used to remove detector noise. The 
+MET group publishes recommendations on the filters that should be used for different eras of data.
+
+> ## Exercise (5 min)
+> The recommended MET filters for Run II are listed on this [twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2).
+> Use this twiki to create a list of MET filters to use in the preselection.
+> {: .source}
+{: .callout}
 
 
 ## Simple Selections
@@ -62,7 +70,7 @@ Consider a heavy resonance decaying to two Z bosons that produce jets to create 
 collision would go into producing a heavy resonance with little transverse momentum, so conservation of momentum tells us that the jets should
 be well separated in phi, ideally they should have a separation of pi in phi. Therefore placing a selection of delta phi > pi/2 should 
 not cut out signal, but will reduce the number of events passed on to the next stage. This also a good stage to place a lower limit on 
-the jet pT.  
+the jet p<sub>T</sub>.  
 
 A jet originating from a Z boson should also have two "prongs" (regions of energy in the calorimeter), these "prongs" are part of the jet
 substructure discussed in the earlier lessons. For a two pronged jet like a Z jet, it is good to place a lower limit on the tau 21 ratio. 
@@ -95,8 +103,9 @@ to ensure that the data was taken in "good" detector conditions. Then the kinema
 monitor the signal and background in between these physics inspired cuts.
 
 > ## Exercise (20 min) Stacked Plots to Monitor Signal and Background
-> Find where the filters are applied in the `bs_select.py` script and then create a stacked histogram displaying the delta phi between 
-the leading and subleading jet. This stacked histogram should display the signal Monte Carlo with the background Monte Carlo stacked on top.
+> Find where the filters are applied in the `bs_select.py` script, check that all the filters are there, and then create a stacked histogram 
+displaying the delta phi between the leading and subleading jet. 
+> This stacked histogram should display the signal Monte Carlo with the background Monte Carlo stacked on top.
 >
 > 
 > > ## Solution
