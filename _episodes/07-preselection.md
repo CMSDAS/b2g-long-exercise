@@ -73,7 +73,7 @@ not cut out signal, but will reduce the number of events passed on to the next s
 the jet p<sub>T</sub>.  
 
 A jet originating from a Z boson should also have two "prongs" (regions of energy in the calorimeter), these "prongs" are part of the jet
-substructure discussed in the earlier lessons. For a two pronged jet like a Z jet, it is good to place a lower limit on the $\tau$<sub>21</sub> ratio. 
+substructure discussed in the earlier lessons. For a two pronged jet like a Z jet, it is good to place a lower limit on the &tau<sub>21</sub> ratio. 
 Another useful substructure variable to use in the preselection is the softdrop mass. The softdrop algorithm will help to reduce the amount
 of pileup that is used when measuring the jet mass. The preselection is a good place to define a wide softdrop mass region. For this example,
 a wide region around the W boson mass would be ideal, such as 65 < m<sub>SD</sub> < 115 GeV. 
