@@ -8,6 +8,7 @@ ssh -Y <username>@lxplus.cern.ch
 # You can also log into the CMSLPC with ssh -Y <username>@cmslpc-sl7.fnal.gov
 mkdir ~/CMSVDAS2020
 # At the LPC you can use the ~/nobackup/ space 
+voms-proxy-init --voms cms #It's best to have all your credentials ready
 ```
 
 
@@ -26,12 +27,12 @@ Now copy the public key content and store it on GitHub under "settings -> SSH an
 ```bash
 cd ~/CMSVDAS2020
 export SCRAM_ARCH=slc7_amd64_gcc820
-cmsrel CMSSW_11_0_1
+cmsrel CMSSW_11_0_1 #Only need to do this once
 cd CMSSW_11_0_1/src
 cmsenv
 virtualenv timber-env
 source timber-env/bin/activate
-git clone https://github.com/lcorcodilos/TIMBER.git
+git clone https://github.com/lcorcodilos/TIMBER.git #Only need to do this once
 cd TIMBER
 python setup.py install
 cd ..
@@ -39,9 +40,10 @@ cd ..
 
 ### Test command for TIMBER/b* selection
 ```bash
-git clone https://github.com/lcorcodilos/BstarToTW_CMSDAS2020.git
+git clone https://github.com/lcorcodilos/BstarToTW_CMSDAS2020.git #Only need to do this once
 cd BstarToTW_CMSDAS2020
-python bs_select.py -i root://cmsxrootd.fnal.gov//store/user/lcorcodi/bstar_nano/rootfiles/BprimeLH1200_bstar16.root -y 16
+python bs_select.py -i /eos/user/c/cmsdas/long-exercises/bstarToTW/rootfiles/signalLH1200_bstar16.root -y 16
+# Also possible from lxplus, replace sample path with root://cmsxrootd.fnal.gov//store/user/lcorcodi/bstar_nano/rootfiles/BprimeLH1200_bstar16.root
 # For LPC, replace sample path with /store/user/lcorcodi/bstar_nano/rootfiles/BprimeLH1200_bstar16.root
 ```
 
@@ -50,12 +52,12 @@ python bs_select.py -i root://cmsxrootd.fnal.gov//store/user/lcorcodi/bstar_nano
 ```bash
 cd ~/CMSVDAS2020
 export SCRAM_ARCH=slc7_amd64_gcc700
-cmsrel CMSSW_10_6_14
+cmsrel CMSSW_10_6_14 #Only need to do this once
 cd CMSSW_10_6_14/src
 cmsenv
-git clone https://github.com/lcorcodilos/2DAlphabet.git
-git clone https://github.com/lcorcodilos/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit/
-bash <(curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh)
+git clone https://github.com/lcorcodilos/2DAlphabet.git #Only need to do this once
+git clone https://github.com/lcorcodilos/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit/ #Only need to do this once
+bash <(curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh) #Only need to do this once
 scram b clean; scram b -j 10
 cmsenv
 ```
