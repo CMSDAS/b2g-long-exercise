@@ -26,7 +26,7 @@ topology relies heavily on tracking or muons, then a useful preselection would l
 topologies, like vector boson fusion (commonly called VBF) have two forward (high eta) jets, so placing a preselection 
 that requires two forward jets is a useful preselection.
 
-> ## Exercise (5 min)
+> ## Discuss (5 min)
 > Now, let's take a more detailed look at our signal topology and see how it fits in with the detector. The b-star is produced 
 from the interaction of a bottom quark and a gluon, will this production mode yield any characteristic forward jets?
 > In this topology, the b-star decays to jet from a W boson and jet from top quark. What is characteristic of a top jet decay?
@@ -73,9 +73,58 @@ a wide region around the W boson mass would be ideal, such as 65 < softdrop mass
 It is important to emphasize that the preselections should be relatively light. It is important to check that the preselection is not eliminating
 large amounts of signal. A good way to monitor this is to utilize stacked "N-1" histograms. More about these plots is described below.
 
+> ## Discuss (5 min)
+> Again, use the images above to think about the signal topology. What "simple" selections can be used in the preselection? Any
+delta phi or pT criteria? What about substructure?
+>
+> 
+> > ## Solution
+> > In this signal topology the t and W should be well separated, so a light delta phi cut should be placed. Think about a reasonable 
+selection and investigate the result in the N-1 exercise. Same for the jet pT. Both the top jet and the W jet should have substructure.
+> > The top jet should have three prongs and W jet should have two prongs. Think about the softdrop regions and n-subjettiness (tau) 
+ratios that should be used and investigate them in the N-1 exercise.
+> > {: .source}
+> {: .solution}
+> {: .source}
+{: .callout}
+
 # Applying our selection and monitoring the MC response
 
-## Stack Plots to monitor signal and background
+When applying the preselection, the selections will be placed serially in the code creating a "cutflow". The filters are applied first 
+to ensure that the data was taken in "good" detector conditions. Then the kinematic/substructure cuts are applied. It is important to 
+monitor the signal and background in between these physics inspired cuts.
+
+> ## Exercise (20 min) Stacked Plots to Monitor Signal and Background
+> Find where the filters are applied in the `bs_select.py` script and then create a stacked histogram displaying the delta phi between 
+the leading and subleading jet. This stacked histogram should display the signal Monte Carlo with the background Monte Carlo stacked on top.
+>
+> 
+> > ## Solution
+> > The filters are listed as flags
+> > ~~~python
+> > flags = ["Flag_goodVertices",
+> >        "Flag_globalTightHalo2016Filter", 
+> >        "Flag_eeBadScFilter", 
+> >        "Flag_HBHENoiseFilter", 
+> >        "Flag_HBHENoiseIsoFilter", 
+> >        "Flag_ecalBadCalibFilter", 
+> >        "Flag_EcalDeadCellTriggerPrimitiveFilter"]
+> > ~~~
+> > {: .source}
+> > Then they are applied using the `Cut` function
+> >
+> > ~~~python
+> > # Initial cuts
+> > a.Cut('filters',a.GetFlagString(flags))
+> > ~~~
+> > 
+> > Now that these filters have been applied, make the stacked histogram in delta phi
+> > 
+> > {: .source}
+> {: .solution}
+> {: .source}
+{: .callout}
+
 
 ## N-1 plots
 
