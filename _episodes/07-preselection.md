@@ -130,7 +130,11 @@ displaying the &Delta;&phi; between the leading and subleading jet.
 > > a.Cut('filters',a.GetFlagString(flags))
 > > ~~~
 > > 
-> > Now that these filters have been applied, make the stacked histogram in &Delta;&phi;
+> > Make the stacked histogram in &Delta;&phi;, 
+> >
+> >
+> > Ideally, we would make stacked histograms for m<sub>SD</sub>, &tau;<sub>21</sub>, and jet p<sub>T</sub>. 
+> > These plots are left as a bonus exercise. 
 > > 
 > > {: .source}
 > {: .solution}
