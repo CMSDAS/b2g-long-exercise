@@ -11,9 +11,10 @@ objectives:
 - "Define a 'good' region of the detector and apply MET filters."
 - "Develop a simple signal selection cutflow."
 - "Make stack plots of background processes."
-- "Make N-1 plots to understand the effect of selection cuts."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Preselection reduces data size, but further signal optimization is done later"
+- "Preselected events should be in good regions of the detector with appropriate filters"
+- "Stacked histograms are an important tool for creating cuts"
 ---
 # Introduction
 
@@ -81,7 +82,7 @@ of pileup that is used when measuring the jet mass. The preselection is a good p
 a wide region around the W boson mass would be ideal, such as 65 < m<sub>SD</sub> < 115 GeV. 
 
 It is important to emphasize that the preselections should be relatively light. It is important to check that the preselection is not eliminating
-large amounts of signal. A good way to monitor this is to utilize stacked "N-1" histograms. More about these plots is described below.
+large amounts of signal. A good way to monitor this is to utilize stacked histograms. More about these plots is described below.
 
 > ## Discuss (5 min)
 > Again, use the images above to think about the signal topology. What "simple" selections can be used in the preselection? Any
@@ -137,7 +138,6 @@ displaying the &Delta;&phi; between the leading and subleading jet.
 {: .callout}
 
 
-## N-1 plots
 
 {% include links.md %}
 
