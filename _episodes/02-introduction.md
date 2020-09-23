@@ -27,6 +27,7 @@ First we can begin with some introductions. The facilitators are:
 - Brendan Regnery, Graduate Student at the University of California -- Davis, he works on an all=hadronic VLQ search and GEM upgrades. 
 
 The team members are:
+- Yusuf Can Cekmecelioglu, Masters Student at Bogazici Univeristy, Istanbul -- Currently working on back-end of the HGCal detector.
 - Federica Riti, PhD student at ETH Zurich, she works on the search for lepton flavour universality violation via the R(J/psi) measurement.
 - (We'll practice some basic push and pull to fill in your info later)
 
