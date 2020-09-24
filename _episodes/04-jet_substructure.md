@@ -2,9 +2,6 @@
 title: "Diving into jet substructure"
 teaching: 20
 exercises: 40
-lesson_number: 2
-day: 2 
-multiday: false
 questions:
 - "What is jet substructure?"
 - "What does the jet substructure look like for the signal?"
@@ -18,6 +15,7 @@ keypoints:
 - "N-subjetiness is how 'N-pronged' a jet looks, more specifically for N subjets it is the sum of pt-weighted constuent-subjet spatial moments."
 - "Traditional top-tagging typically uses &tau;<sub>32</sub> and jet mass, whereas for W-tagging it's &tau;<sub>21<\sub> and the jet mass."
 ---
+  
 ## Jets
 
 After collision, colored particles (with a lifetime longer than the hadronization time scale, i.e. not tops) form cone-like hadronic showers as they propagate away from the interaction point. In experiment, we can only see the interactions of the 'stable' particles (pions, kaons, etc.) with the detectors, which are on average 2/3 charged particles. The calorimeters measure the energy deposits of these partilces, but we have to decide how to combine those energy deposits to best reconstruct the final state partons. In CMS, we use the Particle Flow technique to define PF candidates which we then cluster into jets. 
@@ -40,7 +38,6 @@ Sometimes, we want to capture the entire decay of a heavy object using a larger-
 > > The choice of R-parameter for your jet collection, in a way, defines the lower bound of the pT you are sensitive to.
 > {: .solution}
 {: .challenge}
-
 
 
 ## Jet Substructure
