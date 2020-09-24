@@ -4,3 +4,10 @@ teaching: 0
 exercises: 60
 ---
 Enjoy your lunch from 12-13h :)
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cDA3_5982h8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+{% include links.md %}
+
