@@ -71,7 +71,7 @@ collision would go into producing a heavy resonance with little longitudinal mom
 be well separated in &phi;, ideally they should have a separation of &pi; in &phi;. Therefore placing a selection of &Delta;&phi; > &pi;/2 should 
 not cut out signal, but will reduce the number of events passed on to the next stage. 
 
-> # Bonus
+> # Reflect
 > Why not use a selection close to &delta;&phi; = &pi;?
 > > # Solution
 > > The jets can recoil off of other objects creating a dijet pair that is less than &delta;&phi; = &pi;
@@ -81,11 +81,13 @@ not cut out signal, but will reduce the number of events passed on to the next s
 This also a good stage to place a lower limit on the jet p<sub>T</sub>. In a hadronic analysis, it is common to place a high lower limit on the p<sub>T</sub>.
 For this example, a lower limit of p<sub>T</sub> = 400 GeV should be good.
 
-> # Bonus
+> # Reflect
 > Why place such a high lower limit on jet p<sub>T</sub>?
 > > # Solution
 > > This is a tricky question. It relates to the trigger. Hadronic triggers have a turn on at high H<sub>T</sub> or high p<sub>T</sub>, so the 
 > > lower limit ensures that that the analysis will only investigate the fully efficient region.
+> {: .callout}
+{: .callout}
 
 A jet originating from a Z boson should also have two "prongs" (regions of energy in the calorimeter), these "prongs" are part of the jet
 substructure discussed in the earlier lessons. For a two pronged jet like a Z jet, it is good to place a lower limit on the &tau;<sub>21</sub> ratio. 
@@ -103,7 +105,7 @@ large amounts of signal. A good way to monitor this is to utilize stacked histog
 > 
 > > ## Solution
 > > In this signal topology the t and W should be well separated, so a light &Delta;&phi; cut should be placed. Think about a reasonable 
-selection and investigate the result in the N-1 exercise. Same for the jet p<sub>T</sub>. Both the top jet and the W jet should have substructure.
+selection and investigate the result in the plotting exercise. Same for the jet p<sub>T</sub>. Both the top jet and the W jet should have substructure.
 > > The top jet should have three prongs and W jet should have two prongs. Think about the softdrop regions and n-subjettiness (&tau;) 
 ratios that should be used and investigate them in the plotting exercise.
 > {: .solution}
@@ -115,11 +117,20 @@ When applying the preselection, the selections will be placed serially in the co
 to ensure that the data was taken in "good" detector conditions. Then the kinematic/substructure cuts are applied. It is important to 
 monitor the signal and background in between these physics inspired cuts.
 
-> ## Exercise (20 min) Stacked Plots to Monitor Signal and Background
-> Find where the filters are applied in the `bs_select.py` script, check that all the filters are there, and then create a stacked histogram 
-displaying &tau;<sub>21</sub> &tau;<sub>32</sub> for the leading and subleading jet. 
-> This stacked histogram should display the signal Monte Carlo with the background Monte Carlo stacked on top.
+> ## Exercise (20 min) Plots to Monitor Signal and Background
+> Find where the filters are applied in the `exercises/ex4.py` script, check that all the filters are there, and then create a histogram 
+displaying &tau;<sub>21</sub> &tau;<sub>32</sub> for the leading and subleading jet. This can be done using the `exercises/ex4.py` script 
+from the `BstarToTW_CMSDAS2020` repository. 
+> ~~~bash
+> cd CMSSW_11_0_1/src # where you saved the TIMBER and BstarToTW_CMSDAS2020 repositories during the setup
+> cmsenv
+> python -m virtualenv timber-env
+> source timber-env/bin/activate
+> python exercises/ex4.py -y 16 --select # This first command will crash after the QCD
+> python exercises/ex4.py -y 16 # This will finish the code
+> ~~~
 >
+> What criteria would you use for &tau;<sub>21</sub>? What about &tau;<sub>32</sub>?
 > 
 > > ## Solution
 > > The filters are listed as flags
@@ -139,14 +150,29 @@ displaying &tau;<sub>21</sub> &tau;<sub>32</sub> for the leading and subleading 
 > > a.Cut('filters',a.GetFlagString(flags))
 > > ~~~
 > > 
-> > Make the stacked histogram in &tau;<sub>21</sub>. 
+> > Now, we want make histograms for m<sub>SD</sub>, &Delta;&phi;, and leading/subleading jet p<sub>T</sub>. 
 > >
+> > Let's modify the `ex4.py` script to include leading jet p<sub>T</sub>. To do this, first add a new string
+to `varnames`. Then, define the new quantity. Finally, add an if statement to adjust the bounds of the histograms.
+> > ~~~python
+> > # To the varnames
+> > 'lead_jetPt':'Leading Jet p_{T}',
 > >
-> >
-> > Ideally, we would make stacked histograms for m<sub>SD</sub>, &Delta;&phi;, and jet p<sub>T</sub>. 
-> > These plots are left as a bonus exercise. 
+> > # To the definition
+> > a.Define('lead_jetPt','FatJet_pt[jetIdx[0]]')
 > > 
+> > # add an if statement by the hist_tuple
+> > if "tau" in varname :
+> >     hist_tuple = (histname,histname,20,0,1)
+> > if "Pt" in varname :
+> >     hist_tuple = (histname,histname,30,400,1000)
+> > ~~~
+> > 
+> > The histograms for m<sub>SD</sub>, &Delta;&phi;, and subleading jet p<sub>T</sub> are left is homework.
 > {: .solution}
+> 
+> Finally, add your groups' decided on preselection to the `bs_select.py` script in `BstarToTW_CMSDAS2020`
+>
 {: .callout}
 
 
