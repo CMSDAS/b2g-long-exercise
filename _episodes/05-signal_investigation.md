@@ -1,7 +1,7 @@
 ---
 title: "Investigating the signal topology"
-teaching: 15
-exercises: 45
+teaching: 5
+exercises: 25
 questions:
 - "What is the signal we are trying to select for?"
 - "What observables should be investigated for our final state?"
