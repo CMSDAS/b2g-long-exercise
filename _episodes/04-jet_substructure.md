@@ -2,9 +2,6 @@
 title: "Diving into jet substructure"
 teaching: 20
 exercises: 40
-lesson_number: 2
-day: 2 
-multiday: false
 questions:
 - "What is jet substructure?"
 - "What does the jet substructure look like for the signal?"
@@ -16,8 +13,9 @@ objectives:
 keypoints:
 - "Jet substructure are analysis techniques for measuring a jet observable through its constituent information."
 - "N-subjetiness is how 'N-pronged' a jet looks, more specifically for N subjets it is the sum of pt-weighted constuent-subjet spatial moments."
-- "Traditional top-tagging typically uses &tau;<sub>32</sub> and jet mass, whereas for W-tagging it's &tau;<sub>21<\sub> and the jet mass."
+- "Traditional top-tagging typically uses &tau;<sub>32</sub> and jet mass, whereas for W-tagging it's &tau;<sub>21</sub> and the jet mass."
 ---
+
 ## Jets
 
 After collision, colored particles (with a lifetime longer than the hadronization time scale, i.e. not tops) form cone-like hadronic showers as they propagate away from the interaction point. In experiment, we can only see the interactions of the 'stable' particles (pions, kaons, etc.) with the detectors, which are on average 2/3 charged particles. The calorimeters measure the energy deposits of these partilces, but we have to decide how to combine those energy deposits to best reconstruct the final state partons. In CMS, we use the Particle Flow technique to define PF candidates which we then cluster into jets. 
@@ -26,7 +24,7 @@ After collision, colored particles (with a lifetime longer than the hadronizatio
 
 When analyzing hadronic final states, it is important to understand the jet collections used to cluster energy deposited by the hadronic showers of the final state quarks and gluons. The most common jet clustering algorithm, anti-kt, groups together 'softer' (low kT) objects onto harder (high kT) objects recursively until all objects are separated by a distance of the input R-parameter; the R-parameter of a jet defines the maximum radius that it can cluster constituents into itself. Normally, we use R=0.4 to define single-parton jets, e.g. low pT top decays into three separate (resolved) jets. 
 
-<img src="../fig/antikt.png" alt="antikt" style="width:500px">
+<img src="../fig/antikt.png" alt="antikt" style="width:300px">
 
 Sometimes, we want to capture the entire decay of a heavy object using a larger-R jet. The R-parameter used for these puposes depends on the mass and transverse momentum of the decaying particle, and tends to be between R=0.8-1.2. A good rule of thumb is that the opening angle of a massive particle decaying into much lighter constituents is R<2m/pT.
 
@@ -42,7 +40,6 @@ Sometimes, we want to capture the entire decay of a heavy object using a larger-
 {: .challenge}
 
 
-
 ## Jet Substructure
 
 Jet substructure is a family of analysis techniques that studies the detailed structure within jets through the constituents of the object. When we cluster PF candidates into anti-kt jets, we can keep the information of which PF candidate is associated with which anti-kt jet. Afterwards, we can calculate substructure observables with the stored information.
@@ -52,7 +49,7 @@ Jet substructure is a family of analysis techniques that studies the detailed st
 - Softdrop mass is not quite a traditional substructre variable, but it is commonly used in conjunction with the above. Soft-drop is a technique of jet grooming, in which constituents of a jet are removed depending on their momenta and distance from the jet's centroid. The assumption is that soft radiation, far from the jet axis, is not likely to be part of the hard parton hadronization and thus dropped. [Link to paper](https://arxiv.org/abs/1402.2657)
 - b-discriminant: another not-so-traditional substructure variable that quantifies how likely a jet (or its constituents) contains a b-hadron. This is done by evaluating the secondary vertex information, impact parameters, and other observables that try to identify a b-hadron decay. The higher the number, the more likely it is to contain a b-hadron.
 
-<img src="../fig/NSubjetinessCartoon.png" alt="NSubjetinessCartoon" style="width:500px">  
+<img src="../fig/NSubjetinessCartoon.png" alt="NSubjetinessCartoon" style="width:400px">  
 
 Tops decay (almost always) to b+W, and since we are looking at the all-hadronic channel we are dealing with a W that decays to two quarks. Tagging an all-hadronic top is looking for a 3-pronged jet, where one of those prongs has the decay products of a b-hadron, and typically also requiring the presence of a b-hadron decay and a jet mass close to the 173 GeV of the top quark. W bosons are tagged as two pronged jets in a mass window around 80 GeV.
 
@@ -73,16 +70,16 @@ Another way to utilize the constituent information of jets is through the use of
 ## Exercise
 Use the time before the lunch break to look into the signal sample provided. One quick way to check out its contents is to open the file in interactive root (turning on bash mode with -b helps open the application faster)
 
----bash
+~~~bash
 root -b /eos/home-l/lcorcodi/Storage/rootfiles/BprimeLH1200_bstar16.root
 .ls
 _file0->Print()
----
+~~~
 {: .source}
 
 When loaded from start-up, the file is assigned the '_file0' variable; dig into the information available and see what is available for you to use. Try using the plotting script provided to see some distributions:
 
----bash
+~~~bash
 cd ~/CMSVDAS2020/CMSSW_11_0_1/src/
 cmsenv
 cd timber-env
@@ -91,7 +88,7 @@ cd ../TIMBER
 source setup.sh
 cd ../BstarToTW_CMSDAS2020
 python exercises/ex4.py -y 16
----
+~~~
 {: .source}
 
 The very last line calls on the plotting script, and it is using some root files we have already made for y'all. If you would like to change the selections and make the plots, make the appropriate chages to the script and run it with an additional '--select' flag.
