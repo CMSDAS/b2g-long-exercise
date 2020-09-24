@@ -27,6 +27,7 @@ First we can begin with some introductions. The facilitators are:
 - Brendan Regnery, Graduate Student at the University of California -- Davis, he works on an all=hadronic VLQ search and GEM upgrades. 
 
 The team members are:
+- Davide Bruschini, Master's Student at the University of Pisa - Currently working on the search for EW photon+2 jets events (VBF to photon) at CMS
 - Elham Khazaie, PhD student at Isfahan University of Technology, Iran, working on the search for an exotic decay of the Higgs boson, also working on Luminosity   Calibration.
 - Florian Eble, PhD student at ETH Zurich, working on Dark Matter search by looking for Semi-Visible Jets, also working on luminosity in BRIL.
 - Yusuf Can Cekmecelioglu, Masters Student at Bogazici Univeristy, Istanbul -- Currently working on back-end of the HGCal detector.
