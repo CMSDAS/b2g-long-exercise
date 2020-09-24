@@ -27,8 +27,12 @@ First we can begin with some introductions. The facilitators are:
 - Brendan Regnery, Graduate Student at the University of California -- Davis, he works on an all=hadronic VLQ search and GEM upgrades. 
 
 The team members are:
-- Participant
-- (We'll practice some basic push and pull to fill in your info later)
+- Davide Bruschini, Master's Student at the University of Pisa - Currently working on the search for EW photon+2 jets events (VBF to photon) at CMS
+- Elham Khazaie, PhD student at Isfahan University of Technology, Iran, working on the search for an exotic decay of the Higgs boson, also working on Luminosity   Calibration.
+- Florian Eble, PhD student at ETH Zurich, working on Dark Matter search by looking for Semi-Visible Jets, also working on luminosity in BRIL.
+- Yusuf Can Cekmecelioglu, Masters Student at Bogazici Univeristy, Istanbul -- Currently working on back-end of the HGCal detector.
+- Federica Riti, PhD student at ETH Zurich, she works on the search for lepton flavour universality violation via the R(J/psi) measurement.
+
 
 The overall goal of this long exercise is to offer everyone a high-level exposure of the different components of a physics analysis. In practice, carrying out an analysis takes months and often past a year; we hope to cover the key points of the process and won't have too much time to do so. To help you through the material, we will be providing some useful code for your use. We strongly suggest you focus on understanding the conceptual flow of the analysis and to ask as many questions as you'd like. We also encourage that you get creative and challenge yourself! If there are any parts of the exercise that you feel you can tackle by writing your own scripts, or optimizing ours, please do! We are all collaborators and we can learn a lot from each other.
 
