@@ -71,9 +71,9 @@ collision would go into producing a heavy resonance with little longitudinal mom
 be well separated in &phi;, ideally they should have a separation of &pi; in &phi;. Therefore placing a selection of &Delta;&phi; > &pi;/2 should 
 not cut out signal, but will reduce the number of events passed on to the next stage. 
 
-> # Reflect
+> ## Reflect
 > Why not use a selection close to &delta;&phi; = &pi;?
-> > # Solution
+> > ## Solution
 > > The jets can recoil off of other objects creating a dijet pair that is less than &delta;&phi; = &pi;
 > {: .callout}
 {: .callout}
@@ -81,9 +81,9 @@ not cut out signal, but will reduce the number of events passed on to the next s
 This also a good stage to place a lower limit on the jet p<sub>T</sub>. In a hadronic analysis, it is common to place a high lower limit on the p<sub>T</sub>.
 For this example, a lower limit of p<sub>T</sub> = 400 GeV should be good.
 
-> # Reflect
+> ## Reflect
 > Why place such a high lower limit on jet p<sub>T</sub>?
-> > # Solution
+> > ## Solution
 > > This is a tricky question. It relates to the trigger. Hadronic triggers have a turn on at high H<sub>T</sub> or high p<sub>T</sub>, so the 
 > > lower limit ensures that that the analysis will only investigate the fully efficient region.
 > {: .callout}
