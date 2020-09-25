@@ -29,6 +29,8 @@ topology relies heavily on tracking or muons, then a useful preselection would l
 topologies, like vector boson fusion (commonly called VBF) have two forward (high eta) jets, so placing a preselection 
 that requires two forward jets is a useful preselection.
 
+<img src="../fig/cmsDetectorCrossSection.png" alt="cmsDetectorCrossSection" style="width:400px"> 
+
 > ## Discuss (5 min)
 > Now, let's take a more detailed look at our signal topology and see how it fits in with the detector. The b-star is produced 
 from the interaction of a bottom quark and a gluon, will this production mode yield any characteristic forward jets?
@@ -86,6 +88,7 @@ For this example, a lower limit of p<sub>T</sub> = 400 GeV should be good.
 > > ## Solution
 > > This is a tricky question. It relates to the trigger. Hadronic triggers have a turn on at high H<sub>T</sub> or high p<sub>T</sub>, so the 
 > > lower limit ensures that that the analysis will only investigate the fully efficient region.
+> > <img src="../fig/triggerTurnOn.png" alt="TriggerTurnOn" style="width:200px"> 
 > {: .solution}
 {: .callout}
 
@@ -126,8 +129,7 @@ from the `BstarToTW_CMSDAS2020` repository.
 > cmsenv
 > python -m virtualenv timber-env
 > source timber-env/bin/activate
-> python exercises/ex4.py -y 16 --select # This first command will crash after the QCD
-> python exercises/ex4.py -y 16 # This will finish the code
+> python exercises/ex4.py -y 16 --select
 > ~~~
 >
 > What criteria would you use for &tau;<sub>21</sub>? What about &tau;<sub>32</sub>?
@@ -170,11 +172,15 @@ to `varnames`. Then, define the new quantity. Finally, add an if statement to ad
 > > 
 > > The histograms for m<sub>SD</sub>, &Delta;&phi;, and subleading jet p<sub>T</sub> are left as homework.
 > {: .solution}
-> 
-> Finally, add your groups' decided on preselection to the `bs_select.py` script in `BstarToTW_CMSDAS2020`
 >
 {: .challenge}
 
+> ## Homework 
+> Make histograms for m<sub>SD</sub>, &Delta;&phi;, and subleading jet p<sub>T</sub>. Then, use these plots to agree 
+> on a preselection using the discord chat (Or choose your own if this is after DAS).
+> Finally, add your groups' decided on preselection to the `bs_select.py` script in `BstarToTW_CMSDAS2020`
+>
+{: .testimonial}
 
 
 {% include links.md %}
