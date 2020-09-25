@@ -36,16 +36,23 @@ There are more sophisticated ways to investigate the branches available as well 
 > ## Question: Can you find any previous selections that have been applied to the signal sample? If so, why do you think they were done?
 >
 > > ## Solution
-> > The jet pT has been required to be 350 GeV, and the absolute value of the jet eta is 2.5.
+> > The jet pT has been required to be 350 GeV, and the absolute value of the jet eta (|&eta;|) is 2.5.
 > > 
 > {: .solution}
 {: .challenge}
 
-Bonus: Write a python script that reads the signal sample and outputs each branch name along with the min/max value of that branch into a txt file.
-Bonus+: Write a pyRoot script that reads the signal sample and outputs plots of each branch, using the min/max values you found above in the binning definition. 
+> ## Bonus Exercises:
+> Write a python script that reads the signal sample and outputs each branch name along with the min/max value of that branch into a txt file.
+> Write a pyRoot script that reads the signal sample and outputs plots of each branch, using the min/max values you found above in the binning definition. 
+{: .callout}
 
-You may notice that some variables appear in several variations, e.g. JetPt, PFcandsPt, truthTopPt. What are the different types of collections available (reconstructed, particle, parton, truth, etc.)?
+You may notice that some variables appear in several variations, e.g. `JetPt`, `PFcandsPt`, `truthTopPt`. What are the different types of collections available (reconstructed, particle, parton, truth, etc.)?
 
-Bonus++: Plot the relative resolutions of the reconstructed objects you have with respect to their truth values. For example, the relative resolution of jet transverse momentum is JER=(recoJetPt-truthJetPt)/truthJetPt
+Bonus++: Plot the relative resolutions of the reconstructed objects you have with respect to their truth values. For example, the relative resolution of jet transverse momentum is `JER=(recoJetPt-truthJetPt)/truthJetPt`
 
-Finally, let's look into one of the most important observables of the signal: the effective mass of the t+W system. What does this effective mass mean? Does it represent anything physical? Before plotting, what do you think the distribution should look like, and why?
+Finally, let's look into one of the most important observables of the signal: the effective mass of the t+W system. 
+
+> ## Key Question
+> What does this effective mass mean? Does it represent anything physical? Before plotting, what do you think the distribution should look like, and why?
+{: .challenge}
+
