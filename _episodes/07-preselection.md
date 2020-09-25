@@ -56,7 +56,7 @@ MET group publishes recommendations on the filters that should be used for diffe
 
 > ## Exercise (5 min)
 > The recommended MET filters for Run II are listed on this [twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2).
-> Use this twiki to create a list of MET filters to use in the preselection.
+> Use this [twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2) to create a list of MET filters to use in the preselection.
 {: .callout}
 
 
@@ -72,9 +72,9 @@ be well separated in &phi;, ideally they should have a separation of &pi; in &ph
 not cut out signal, but will reduce the number of events passed on to the next stage. 
 
 > ## Reflect
-> Why not use a selection close to &delta;&phi; = &pi;?
+> Why not use a selection close to &Delta;&phi; = &pi;?
 > > ## Solution
-> > The jets can recoil off of other objects creating a dijet pair that is less than &delta;&phi; = &pi;
+> > The jets can recoil off of other objects creating a dijet pair that is less than &Delta;&phi; = &pi;
 > {: .solution}
 {: .callout}
 
@@ -168,7 +168,7 @@ to `varnames`. Then, define the new quantity. Finally, add an if statement to ad
 > >     hist_tuple = (histname,histname,30,400,1000)
 > > ~~~
 > > 
-> > The histograms for m<sub>SD</sub>, &Delta;&phi;, and subleading jet p<sub>T</sub> are left is homework.
+> > The histograms for m<sub>SD</sub>, &Delta;&phi;, and subleading jet p<sub>T</sub> are left as homework.
 > {: .solution}
 > 
 > Finally, add your groups' decided on preselection to the `bs_select.py` script in `BstarToTW_CMSDAS2020`
