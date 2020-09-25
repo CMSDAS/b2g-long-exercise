@@ -67,3 +67,31 @@ cmsenv
 cd 2DAlphabet
 python run_MLfit.py unit_tests/configs/input_lin100kv10k.json --tag=test
 ```
+
+## Update Code Every Start of Session
+When updating TIMBER, it's best to also redo the environment:
+```bash
+cd ~/CMSVDAS2020/CMSSW_11_0_1/src/
+rm -rf timber-env
+cmsenv
+python -m virtualenv timber-env
+source timber-env/bin/activate
+```
+Then navigate to the TIMBER git space to pull the recent changes:
+```bash
+cd ../TIMBER
+git pull origin master
+source setup.sh
+```
+We should do the same for the bstar analysis code:
+```bash
+cd ~/CMSVDAS2020/CMSSW_11_0_1/src/BstarToTW_CMSDAS2020
+git pull origin master
+```
+To update the 2DAlphabet package, switch CMSSW relase spaces
+```bash
+cd ~/CMSVDAS2020/CMSSW_10_6_14/src/
+cmsenv
+cd 2DAlphabet
+git pull origin master
+```
