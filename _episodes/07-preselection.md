@@ -88,7 +88,7 @@ For this example, a lower limit of p<sub>T</sub> = 400 GeV should be good.
 > > ## Solution
 > > This is a tricky question. It relates to the trigger. Hadronic triggers have a turn on at high H<sub>T</sub> or high p<sub>T</sub>, so the 
 > > lower limit ensures that that the analysis will only investigate the fully efficient region.
-> > <img src="../fig/triggerTurnOn.png" alt="TriggerTurnOn" style="width:200px"> 
+> > <img src="../fig/triggerTurnOn.png" alt="triggerTurnOn" style="width:200px"> 
 > {: .solution}
 {: .callout}
 
