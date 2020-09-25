@@ -33,7 +33,7 @@ The team members are:
 - Florian Eble, PhD student at ETH Zurich, working on Dark Matter search by looking for Semi-Visible Jets, also working on luminosity in BRIL.
 - Yusuf Can Cekmecelioglu, Masters Student at Bogazici Univeristy, Istanbul -- Currently working on back-end of the HGCal detector.
 - Federica Riti, PhD student at ETH Zurich, she works on the search for lepton flavour universality violation via the R(J/psi) measurement.
-- Kaustuv Datta, PhD student at ETH Zurich, working on measurements of bases of N-subjettiness observables to map out the phase space of emissions in light jets, and jets originating from different boosted hadronic decays.    
+- Kaustuv Datta, PhD student at ETH Zurich, working on measurements of bases of N-subjettiness observables to map out the phase space of emissions in light jets, and jets originating from boosted W boson and top quark decays.    
 
 The overall goal of this long exercise is to offer everyone a high-level exposure of the different components of a physics analysis. In practice, carrying out an analysis takes months and often past a year; we hope to cover the key points of the process and won't have too much time to do so. To help you through the material, we will be providing some useful code for your use. We strongly suggest you focus on understanding the conceptual flow of the analysis and to ask as many questions as you'd like. We also encourage that you get creative and challenge yourself! If there are any parts of the exercise that you feel you can tackle by writing your own scripts, or optimizing ours, please do! We are all collaborators and we can learn a lot from each other.
 
