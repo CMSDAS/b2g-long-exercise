@@ -47,7 +47,7 @@ Think about this while looking at the Feynman diagram and the signal topology.
 > > restrict |&eta;| < 2.4. There are no detector differences in phi that should impact this search, so there should be no restriction
 > > in &phi;.
 > {: .solution}
-{: .callout}
+{: .challenge}
 
 ## Finding Appropriate MET Filters
 
@@ -57,7 +57,7 @@ MET group publishes recommendations on the filters that should be used for diffe
 > ## Exercise (5 min)
 > The recommended MET filters for Run II are listed on this [twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2).
 > Use this [twiki](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2) to create a list of MET filters to use in the preselection.
-{: .callout}
+{: .challenge}
 
 
 ## Simple Selections
@@ -109,7 +109,7 @@ selection and investigate the result in the plotting exercise. Same for the jet 
 > > The top jet should have three prongs and W jet should have two prongs. Think about the softdrop regions and n-subjettiness (&tau;) 
 ratios that should be used and investigate them in the plotting exercise.
 > {: .solution}
-{: .callout}
+{: .challenge}
 
 # Applying our selection and monitoring the MC response
 
@@ -173,7 +173,7 @@ to `varnames`. Then, define the new quantity. Finally, add an if statement to ad
 > 
 > Finally, add your groups' decided on preselection to the `bs_select.py` script in `BstarToTW_CMSDAS2020`
 >
-{: .callout}
+{: .challenge}
 
 
 
