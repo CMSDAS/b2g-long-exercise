@@ -75,7 +75,7 @@ not cut out signal, but will reduce the number of events passed on to the next s
 > Why not use a selection close to &delta;&phi; = &pi;?
 > > ## Solution
 > > The jets can recoil off of other objects creating a dijet pair that is less than &delta;&phi; = &pi;
-> {: .callout}
+> {: .solution}
 {: .callout}
 
 This also a good stage to place a lower limit on the jet p<sub>T</sub>. In a hadronic analysis, it is common to place a high lower limit on the p<sub>T</sub>.
@@ -86,7 +86,7 @@ For this example, a lower limit of p<sub>T</sub> = 400 GeV should be good.
 > > ## Solution
 > > This is a tricky question. It relates to the trigger. Hadronic triggers have a turn on at high H<sub>T</sub> or high p<sub>T</sub>, so the 
 > > lower limit ensures that that the analysis will only investigate the fully efficient region.
-> {: .callout}
+> {: .solution}
 {: .callout}
 
 A jet originating from a Z boson should also have two "prongs" (regions of energy in the calorimeter), these "prongs" are part of the jet
