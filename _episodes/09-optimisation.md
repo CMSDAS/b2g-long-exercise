@@ -133,10 +133,10 @@ Going forward with this exercise, we will use the the 'S/&radic;B' approximation
 
 Now that we understand what the minimal selection is that we want to apply to our signal and background, we need to think harder about what are the final (tighter) selections that we want to apply to define our signal and control regions.
 
-> ## Question: What is a control region and why do we need it?
+> ## Question: What are some parts of the analysis you think could be optimized?
 >
-> What are some parts of the analysis you think could be optimized?
->
+> In addition to the preselection, we can make selections on the top and W bosons to ensure an enriched signal region.
+> 
 > > ## Solution
 > >
 > > As mentioned above, the pre-selections chosen for the all-had b&#42;->tW (B2G-19-003) analysis were
@@ -148,36 +148,33 @@ Now that we understand what the minimal selection is that we want to apply to ou
 > > - W-tga: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
 > > - (Later) m<sub>tW</sub> > 1200 GeV
 > >
-> > In addition to this, the SR is defined by a top tag of
-> > - &tau;32 < 0.65
+> > Our selections should at-least be this tight. In addition to these selections, the SR of their analysis is defined by a top tag of
+> > - &tau;<sub>32</sub> < 0.65
 > > - m<sub>SD</sub> window of [105,220]
 > > - deepCSV<sub>subjet</sub> < 0.22(2016)/0.15(2017)/0.12(2018)
 > > More specifically, the B2G-19-003 team included the m<sub>tW</sub> > 1200 GeV cut in the later selections and defined the SR W-tagged jet as one that is not top-tagged but passes the preselection cuts. 
-> > In the case that th two leading jets are top-tagged, this region was used 
+> > In the case that the two leading jets are top-tagged, this region was used as a ttbar measurement (control) region.
+> > 
+> > Do we want to use similar selections? Try looking into these distributions and make your own call!
 > {: .solution}
 {: .challenge}
 
+## 'N minus 1' Plots
 
-> ## Question: What should we optimize?
->
-> What are some parts of the analysis you think could be optimized?
->
-> > ## Solution
-> >
-> > The selections could be further tightened from what we decided for preselection. 
-> >
-> {: .solution}
-{: .challenge}
+One powerful analysis tool for optimization are what are referred to as 'N minus 1' plots. These are plots of distributions used in series of selections, systematically omitting one selection of the series at a time and plotting that varibale. N-1 plots can help us understand the impact of tightening cuts on the variable. Normally, we 'tighten' selections and want to know how our significance estimate changes as a function of 'tighening'. The direction of 'tight' depends on the observable at hand, for example toward 0 for &tau;<sub>32</sub> and towards infinity for jet p<sub>T</sub>.
 
-There are many variables that behave similarly in signal and the background processes, cutting on such variables may not be beneficial since you would need to cut hashly on signal to remove background. Sometimes, the variables can help discriminate more obviously but the exact value which to cut on may be hard to identify. 
-
-> ## Question: How can we quantify an optimal selection of a variable?
+> ## Question: How would you define tight for a mass peak?
 >
 > > ## Solution
 > >
-> > What we are trying to do is keep signal and reject background. 
-> > The basic significance measure is signal/sqrt(BG), and we want to plot how this significance changes as you cut harder on the variables.
-> > Try generating these plots and finding the values on the variables to cut on to maximize the measure of significance.
-> >
+> > Normally we use a one-sided selections, but for a mass peak we may want to make a window requirement.
+> > <img src="../fig/MassSignificance.png" alt="MassSignificance" style="width:300px"> 
+> > The closer you are to the taregt mass the tighter. Thus, you would have to make a decision on what the target mass should be (note this could differ from the ideal mass) for use as the upper limit of the significance estimation.
 > {: .solution}
 {: .challenge}
+
+Give it a shot yourself, type the following into your terminal from the BstarToTW_CMSDAS2020 directory
+~~~bash
+python exercises/nminus1.py -y 16  --select
+~~~
+This should create some example plots for the selections used by the B2G-19-003 analysis team. Change the selections applied to what you have decided upon today to checkout the impact of your cuts. Is your selection optimal? Use the remaining time to produce and look into these plots to come up with a signal region selection.
