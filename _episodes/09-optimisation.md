@@ -83,13 +83,19 @@ Last session, we talked about how a preselection is useful to cut down the size 
 
 > ## Question: What should our preselection be?
 >
-> You may have noticed that the code repositories hosting the tutorial info and the analysis code used in this exercise use different services (GitHub vs GitLab). Why is this the case?
+> Discuss for the next ~15 minutes what the preselection for our analysis should be. Feel free to use your plots as evidence supporting your argument. 
+> Think about what the preselection is supposed to be cutting on (e.g., remember to leave space for estimating the BG).
 >
 > > ## Solution
 > >
-> > GitHub is completely public, whereas GitLab is maintained by CERN and requires credential to host projects. 
-> > Depending on the needs of the project you are working on, you may want the public nature of GitLab or the speciic tools of GitLab.
-> > For example, GitLab's CI/CD has additional features that are specifically useful to developing analysis software.
+> > The pre-selections chosen for the all-had b&#42;->tW (B2G-19-003) analysis were
+> > - Standard filters and JetID
+> > - p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
+> > - &#124;&eta;&#124; < 2.4
+> > - &#124;&Delta;&phi;&#124; > &pi;/2
+> > - &#124;&Delta;y&#124; < 1.6
+> > - W-tga: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
+> > - (Later) m<sub>tW</sub> > 1200 GeV
 > {: .solution}
 {: .challenge}
 
