@@ -69,12 +69,11 @@ git pull origin master
 > >
 > > The pre-selections chosen for the all-had b*->tW (B2G-19-003) analysis were
 > > - Standard filters and JetID
-> > – p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
+> > - p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
 > > - |&eta;| < 2.4
-> > > 2.4
 > > - |&Delta;&phi;| > &pi;/2
 > > - |&Delta;y| < 1.6
-> > - W-tag: $tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
+> > - W-tag: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
 > > - (Later) m<sub>tW</sub> > 1200 GeV
 > > {: .output}
 > {: .solution}
