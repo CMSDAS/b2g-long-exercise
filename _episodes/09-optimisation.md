@@ -74,7 +74,7 @@ Last session, we talked about how a preselection is useful to cut down the size 
 > > - |&eta;| < 2.4
 > > - |&Delta;&phi;| > &pi;/2
 > > - |&Delta;y| < 1.6
-> > - W-tag: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
+> > - W-tga: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
 > > - (Later) m<sub>tW</sub> > 1200 GeV
 > > {: .output}
 > {: .solution}
