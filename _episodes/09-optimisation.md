@@ -68,7 +68,7 @@ Last session, we talked about how a preselection is useful to cut down the size 
 >
 > > ## Solution
 > >
-> > The pre-selections chosen for the all-had b*->tW (B2G-19-003) analysis were
+> > The pre-selections chosen for the all-had b&#42;->tW (B2G-19-003) analysis were
 > > - Standard filters and JetID
 > > - p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
 > > - |&eta;| < 2.4
@@ -87,11 +87,11 @@ With an idea of how we want to make out preselection, let's take a moment to thi
 > ## Question: How would we expect to see our signal? Is there a specific, discriminating variable we should be using in our analysis to find our signal?
 > Think about what kind of signal we are looking for. Is it a resonance or not? What 
 > > ## Solution
-> > We are looking for an excited b-quark resonance (b*). Resonances tend to appear as a 'bump' in some observable with a normally falling distribution.
+> > We are looking for an excited b-quark resonance (b&#42;). Resonances tend to appear as a 'bump' in some observable with a normally falling distribution.
 > > For example, in 2012 analysis teams performed a similar strategy when searching for the scalar (Higgs) boson at 125 GeV.
 > > <img src="../fig/HiggsDiscoveryPlot.png" alt="HiggsDiscoveryPlot" style="width:200px"> 
 > > In this example, the mass was reconstructed from the two decaying photons or muons.
-> > For our signal, the mass of the b* is also an observable that could help discriminate; we can reconstruct the b* effective mass (m<sub>tW</sub>) from the decaying t and W.
+> > For our signal, the mass of the b&#42; is also an observable that could help discriminate; we can reconstruct the b&#42; effective mass (m<sub>tW</sub>) from the decaying t and W.
 > > {: .output}
 > {: .solution}
 {: .challenge}
@@ -101,7 +101,7 @@ Now that we know we will want to use m<sub>tW</sub>, we need to make a rough dec
 > ## Question: What is our general signal-selection/background-estimation strategy going to be?
 > Think about what backgrounds we have, how we will estimate those, and how we can make the best selection for a signal region.
 > > ## Solution
-> > Disclaimer: We are guiding you through the decisions made by the All-Had b*->tW analysis team, y'all are free to differ from it. This is just an example of what was done recently.
+> > Disclaimer: We are guiding you through the decisions made by the All-Had b&#42;->tW analysis team, y'all are free to differ from it. This is just an example of what was done recently.
 > > Our backgrounds are predominantly multi-jet QCD background (including W+Jets), and SM processes with tops+jets (ttbar and singletop). ttbar and singletop are BGs that are fairly well-modeled and we will keep their shape but allow their normalization to float when fitting parameters as the end. We will discuss fitting parameters on Tuesday's sessions.
 > > A simple way would be to use a 'bump-hunt' in m<sub>tW</sub>. We can also use m<sub>t</sub>, to simultaneously define a signal region and a measurement region for QCD/W+Jets and ttbar. We will discuss this 2-D bump-hunt approach in detail in the next session.
 > > We can define the signal region by further optimizing selections on our t and W candidate jets, with a window selection on the m<sub>t</sub> and bump-hunt in m<sub>tW</sub>.
