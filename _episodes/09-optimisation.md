@@ -1,7 +1,7 @@
 ---
 title: "Optimising the analysis"
-teaching: 10
-exercises: 50
+teaching: 30
+exercises: 60
 questions:
 - "What aspects of our analysis do we want to optimize?"
 - "How can we quantify selections to help decide SR/CR definitons."
