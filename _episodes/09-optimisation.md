@@ -63,25 +63,6 @@ git pull origin master
 Last session, we talked about how a preselection is useful to cut down the size of the ntuples produced/read. Generally your preselection should include the union of your signal and control regions, cutting out unnecessary data. Later on, we will make further selections to optimize our signal regions and estimate the background in control regions. For this stage, using the plots we were able to make from BstarToTW_CMSDAS2020/examples/ex4.py, let's decide on a preselection.
 
 > ## Question: What should our preselection be?
-> 
-> Discuss for the next ~15 minutes what the preselection for our analysis should be. Feel free to use your plots as evidence supporting your argument. 
-> Think about what the preselection is supposed to be cutting on (e.g., remember to leave space for estimating the BG).
->
-> > ## Solution
-> >
-> > The pre-selections chosen for the all-had b&#42;->tW (B2G-19-003) analysis were
-> > - Standard filters and JetID
-> > - p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
-> > - &#124;&eta;&#124; < 2.4
-> > - &#124;&Delta;&phi;&#124; > &pi;/2
-> > - &#124;&Delta;y&#124; < 1.6
-> > - W-tga: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
-> > - (Later) m<sub>tW</sub> > 1200 GeV
-> > {: .output}
-> {: .solution}
-{: .challenge}
-
-> ## Question: What should our preselection be?
 >
 > Discuss for the next ~15 minutes what the preselection for our analysis should be. Feel free to use your plots as evidence supporting your argument. 
 > Think about what the preselection is supposed to be cutting on (e.g., remember to leave space for estimating the BG).
@@ -118,13 +99,15 @@ With an idea of how we want to make our preselection, let's take a moment to thi
 Now that we know we will want to use m<sub>tW</sub>, we need to make a rough decision of how we are going to select for signal and estimate the background.
 
 > ## Question: What is our general signal-selection/background-estimation strategy going to be?
+>
 > Think about what backgrounds we have, how we will estimate those, and how we can make the best selection for a signal region.
+>
 > > ## Solution
+> >
 > > Disclaimer: We are guiding you through the decisions made by the All-Had b&#42;->tW analysis team, y'all are free to differ from it. This is just an example of what was done recently.
 > > Our backgrounds are predominantly multi-jet QCD background (including W+Jets), and SM processes with tops+jets (ttbar and singletop). ttbar and singletop are BGs that are fairly well-modeled and we will keep their shape but allow their normalization to float when fitting parameters as the end. We will discuss fitting parameters on Tuesday's sessions.
 > > A simple way would be to use a 'bump-hunt' in m<sub>tW</sub>. We can also use m<sub>t</sub>, to simultaneously define a signal region and a measurement region for QCD/W+Jets and ttbar. We will discuss this 2-D bump-hunt approach in detail in the next session.
 > > We can define the signal region by further optimizing selections on our t and W candidate jets, with a window selection on the m<sub>t</sub> and bump-hunt in m<sub>tW</sub>.
-> > {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -141,7 +124,6 @@ Perhaps when deciding the rough preselection cuts you may have already thought '
 > > The reason this is not adequate is that you want to make a selection that cuts away background at a rate that enhances the signal significance. 
 > > Roughly, the significance of the signal strength can be estimated as the ratio of the signal over the square root of the dataset
 > > &sigma;<sub>sig</sub> &approx; N<sub>sig</sub>/&radic;N<sub>tot</sub>&approx;N<sub>sig</sub>/&radic;N<sub>BG</sub>
-> > {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -157,9 +139,21 @@ Now that we understand what the minimal selection is that we want to apply to ou
 >
 > > ## Solution
 > >
-> > The selections could be further tightened from what we decided for preselection. 
+> > As mentioned above, the pre-selections chosen for the all-had b&#42;->tW (B2G-19-003) analysis were
+> > - Standard filters and JetID
+> > - p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
+> > - &#124;&eta;&#124; < 2.4
+> > - &#124;&Delta;&phi;&#124; > &pi;/2
+> > - &#124;&Delta;y&#124; < 1.6
+> > - W-tga: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
+> > - (Later) m<sub>tW</sub> > 1200 GeV
 > >
-> > {: .output}
+> > In addition to this, the SR is defined by a top tag of
+> > - &tau;32 < 0.65
+> > - m<sub>SD</sub> window of [105,220]
+> > - deepCSV<sub>subjet</sub> < 0.22(2016)/0.15(2017)/0.12(2018)
+> > More specifically, the B2G-19-003 team included the m<sub>tW</sub> > 1200 GeV cut in the later selections and defined the SR W-tagged jet as one that is not top-tagged but passes the preselection cuts. 
+> > In the case that th two leading jets are top-tagged, this region was used 
 > {: .solution}
 {: .challenge}
 
@@ -172,7 +166,6 @@ Now that we understand what the minimal selection is that we want to apply to ou
 > >
 > > The selections could be further tightened from what we decided for preselection. 
 > >
-> > {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -186,6 +179,5 @@ There are many variables that behave similarly in signal and the background proc
 > > The basic significance measure is signal/sqrt(BG), and we want to plot how this significance changes as you cut harder on the variables.
 > > Try generating these plots and finding the values on the variables to cut on to maximize the measure of significance.
 > >
-> > {: .output}
 > {: .solution}
 {: .challenge}
