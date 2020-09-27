@@ -71,9 +71,9 @@ Last session, we talked about how a preselection is useful to cut down the size 
 > > The pre-selections chosen for the all-had b&#42;->tW (B2G-19-003) analysis were
 > > - Standard filters and JetID
 > > - p<sub>T</sub>(t), p<sub>T</sub>(W) > 400 GeV
-> > - |&eta;| < 2.4
-> > - |&Delta;&phi;| > &pi;/2
-> > - |&Delta;y| < 1.6
+> > - &#124;&eta;&#124; < 2.4
+> > - &#124;&Delta;&phi;&#124; > &pi;/2
+> > - &#124;&Delta;y&#124; < 1.6
 > > - W-tga: &tau;<sub>21</sub> < 0.4/0.45 and 65 < m<sub>SD</sub> < 105 GeV
 > > - (Later) m<sub>tW</sub> > 1200 GeV
 > > {: .output}
