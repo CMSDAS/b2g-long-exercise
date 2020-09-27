@@ -63,6 +63,7 @@ git pull origin master
 Last session, we talked about how a preselection is useful to cut down the size of the ntuples produced/read. Generally your preselection should include the union of your signal and control regions, cutting out unnecessary data. Later on, we will make further selections to optimize our signal regions and estimate the background in control regions. For this stage, using the plots we were able to make from BstarToTW_CMSDAS2020/examples/ex4.py, let's decide on a preselection.
 
 > ## Question: What should our preselection be?
+> 
 > Discuss for the next ~15 minutes what the preselection for our analysis should be. Feel free to use your plots as evidence supporting your argument. 
 > Think about what the preselection is supposed to be cutting on (e.g., remember to leave space for estimating the BG).
 >
@@ -80,7 +81,7 @@ Last session, we talked about how a preselection is useful to cut down the size 
 > {: .solution}
 {: .challenge}
 
-> ## Question: What is the difference between GitHub and GitLab
+> ## Question: What should our preselection be?
 >
 > You may have noticed that the code repositories hosting the tutorial info and the analysis code used in this exercise use different services (GitHub vs GitLab). Why is this the case?
 >
