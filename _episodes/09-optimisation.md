@@ -60,7 +60,7 @@ git pull origin master
 
 ## Wrapping-Up From Preselection Episode
 
-Last session, we talked about how a preselection is useful to cut down the size of one's ntuples. Generally your preselection should include the intersection of your signal and control regions, cutting out unnecessary data. Later on, we will make further selections to optimize our signal regions and estimate the background in control regions. For this stage, using the plots we were able to make from BstarToTW_CMSDAS2020/examples/ex4.py, what is a good set of preselection cuts?
+Last session, we talked about how a preselection is useful to cut down the size of the ntuples produced/read. Generally your preselection should include the union of your signal and control regions, cutting out unnecessary data. Later on, we will make further selections to optimize our signal regions and estimate the background in control regions. For this stage, using the plots we were able to make from BstarToTW_CMSDAS2020/examples/ex4.py, let's decide on a preselection.
 
 > ## Question: What should our preselection be?
 > Discuss for the next ~15 minutes what the preselection for our analysis should be. Feel free to use your plots as evidence supporting your argument. 
