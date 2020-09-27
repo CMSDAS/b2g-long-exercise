@@ -80,6 +80,18 @@ Last session, we talked about how a preselection is useful to cut down the size 
 > {: .solution}
 {: .challenge}
 
+> ## Question: What is the difference between GitHub and GitLab
+>
+> You may have noticed that the code repositories hosting the tutorial info and the analysis code used in this exercise use different services (GitHub vs GitLab). Why is this the case?
+>
+> > ## Solution
+> >
+> > GitHub is completely public, whereas GitLab is maintained by CERN and requires credential to host projects. 
+> > Depending on the needs of the project you are working on, you may want the public nature of GitLab or the speciic tools of GitLab.
+> > For example, GitLab's CI/CD has additional features that are specifically useful to developing analysis software.
+> {: .solution}
+{: .challenge}
+
 ## Taking a Step Back: Analysis Strategy
 
 With an idea of how we want to make out preselection, let's take a moment to think ahead to how we want to organize our analysis. 
