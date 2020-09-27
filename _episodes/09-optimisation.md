@@ -95,7 +95,7 @@ Last session, we talked about how a preselection is useful to cut down the size 
 
 ## Taking a Step Back: Analysis Strategy
 
-With an idea of how we want to make out preselection, let's take a moment to think ahead to how we want to organize our analysis. 
+With an idea of how we want to make our preselection, let's take a moment to think ahead to how we want to organize our analysis. 
 
 > ## Question: How would we expect to see our signal? Is there a specific, discriminating variable we should be using in our analysis to find our signal?
 > Think about what kind of signal we are looking for. Is it a resonance or not? What 
