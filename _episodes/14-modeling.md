@@ -141,15 +141,55 @@ in the ttbar measurement region and signal region!
 > to the appropriate processes. Which processes should these uncertainties be added to? Then add in the
 > the uncertainties to the appropriate processes and rerun the 2DAlphabet. Compare the combine cards
 > using `diff` to see the changes before and after adding in the top p<sub>T</sub> uncertainty.
-> 
+>
+> Do this exercise for `input_dataBsUnblind16.json` and then after looking at the solution, apply to the other 
+> config files.
+>  
 > > ## Solution
 > > 
+> > The Top p<sub>T</sub> uncertainties should be applied to the `ttbar` and `ttbar-semilep` processes. For example:
+> >
+> > ~~~json
+> > "ttbar": {
+> >     "TITLE":"t#bar{t}",
+> >     "FILE":"path/TWpreselection16_ttbar_tau32medium_ttbar.root",
+> >     "HISTPASS":"MtwvMtPass",
+> >     "HISTFAIL":"MtwvMtFail",
+> >     "SYSTEMATICS":["lumi16","ttbar_xsec","Tpt-alpha","Tpt-beta"],
+> >     "COLOR": 2,
+> >     "CODE": 2
+> > }     
+> > ~~~
+> >
+> > Now, keep the data card made before doing this change and then run the code to see the difference.
+> >
+> > ~~~bash
+> > # From the 2DAlphabet directory, store the old card
+> > cp bsTest/SR16/card_SR16.txt no_topUn_SR16.txt
+> > # Then, rerun the 2DAlphabet
+> > python run_MLfit.py configs_2Dalpha/input_dataBsUnblind16.json --tag=bsTest
+> > # Then look at the difference
+> > diff no_topUn_SR16.txt bsTest/SR16/card_SR16.txt
+> > ~~~
+> > 
+> > To understand more about what is happening in combine and how this shape uncertainty is applied see this
+> > [DAS exercise](https://cmsdas.github.io/statistics-short-exercise/#combine-part-2-shape-based-analysis)
+> >
+> > Now that this change has been made for one process in one configuration file, apply the same change for
+> > all `ttbar` and `ttbar-semilep` processes in all 6 configuration files.
+> >
+> > Note that `ttbar` is all-inclusive for 2016 and hadronic only for 2017 and 2018 so the `ttbar_semilep` is included only in 2017 and 2018.
 > {: .solution}
 {: .challenge}
 
 
 > ## Bonus Exercise: Trigger Efficiency uncertainty
 >
+> The trigger efficiency uncertainty is defined as a systematic in the configuration files. As a bonus exercise, add 
+> this shape systematic uncertainty to the processes. How do you measure Trigger efficiency? And how is this uncertainty
+> calculated?
+> 
+> This exercise is a bonus and not necessary to continue on. 
 >
 {: .callout}
 
