@@ -63,6 +63,11 @@ python run_MLfit.py configs_2Dalpha/input_dataBsUnblind.json --tag=bsTest
 
 This will create some output plots and combine cards. The output is stored in `bsTest/SR16/`.
 
+> ## Tip
+> You can append --fullRun2 and that will add together the 2016, 2017, and 2018 results for the signal 
+> region and ttbar measurement region separately so that there are fewer plots to view.
+{: .callout}
+
 # Uncertainties
 
 Write some stuff about uncertainties. [FIXME]
