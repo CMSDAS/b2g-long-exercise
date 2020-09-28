@@ -30,6 +30,30 @@ a `"CODE"` of <=0 means that a process is a signal event. The `"SYSTEMATICS"` li
 uncertainties for that process. The systematic uncertainties are assigned values in the `"SYSTEMATIC"` section. 
 [FIXME] explain HISTPASS and HISTFAIL
 
+## Running 2DAlphabet
+
+In order to run the 2DAlphabet package on our json configuration files, we will first make a symbolic link to
+the configuration files to make things easier. 
+
+~~~bash
+# start inside the directory containing the BstarToTW_CMSDAS2020 repo
+cd CMSSW_11_0_1/src/BstarToTW_CMSDAS2020/
+# Now move to the directory containing the 2DAlphabet
+cd ../../../CMSSW_10_6_14/src/2DAlphabet
+# now create a symlink (symbolic link) to the config file directory
+ln -s ../../../CMSSW_11_0_1/src/BstarToTW_CMSDAS2020/configs_2Dalpha/ configs_2Dalpha
+~~~
+
+Now run one of the configuration files.
+
+~~~bash
+cmsenv
+# now run one of the files 
+python run_MLfit.py configs_2Dalpha/input_dataBsUnblind.json --tag=bsTest
+~~~
+
+This will create some output plots and combine cards. The output is stored in `bsTest/SR16/`.
+
 # Uncertainties
 
 Write some stuff about uncertainties. [FIXME]
@@ -77,7 +101,12 @@ The cross section uncertainty is another symmetric uncertainty added to each Mon
 > ## Discuss (5 min)
 > Should the signal Monte Carlo sample have a cross section uncertainty?
 > > ## Solution
-> > This is because the “cross section” of the signal is exactly what we want to fit for (ie. the parameter of interest/POI/r/mu)! One might ask then why we assign an uncertainty from the luminosity to the signal when the luminosity is just another normalization uncertainty. The answer is that the luminosity uncertainty is fundamentally different from the cross section uncertainties because it is correlated across all of the processes - if it goes up for one, it goes up for all. The cross section uncertainties though are per-process - the ttbar cross section can go up and the single top contribution will remain the same.
+> > This is because the “cross section” of the signal is exactly what we want to fit for (ie. the parameter 
+> > of interest/POI/r/mu)! One might ask then why we assign an uncertainty from the luminosity to the signal 
+> > when the luminosity is just another normalization uncertainty. The answer is that the luminosity uncertainty 
+> > is fundamentally different from the cross section uncertainties because it is correlated across all of 
+> > the processes - if it goes up for one, it goes up for all. The cross section uncertainties though are 
+> > per-process - the ttbar cross section can go up and the single top contribution will remain the same.
 > {: .solution}
 {: .challenge}
 
@@ -105,8 +134,15 @@ in the ttbar measurement region and signal region!
 {: .testimonial}
 
 > ## Exercise
-> Adding in Top p<sub>T</sub> uncertainties. Lucas's proposed exercise will be added here. [FIXME]
+> Add the Top p<sub>T</sub> uncertainties to the appropriate processes and see the changes in combine.
+> 
+> The uncertainties are already included in the section on `"SYSTEMATICS"`. However, they have not been
+> added to the individual processes. To start this exercise, add the `Tpt-alpha` and `Tpt-beta` uncertainties
+> to the appropriate processes. Which processes should these uncertainties be added to? Then 
 
 
 > ## Bonus Exercise: Trigger Efficiency uncertainty
+
+
+
 
