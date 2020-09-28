@@ -1,14 +1,17 @@
----
-title: "Modelling the background with 2DAlphabet (a wrapper for Combine)"
-teaching: 10
-exercises: 20
+--
+title: "Modelling the background and signal with 2DAlphabet (a wrapper for Combine)"
+teaching: 30
+exercises: 40
 questions:
-- "How do I use the background model in a statistical analysis?"
+- "How do I use the 2DAlphabet package to model the background?"
 objectives:
-- "Have the background model implemented in RooFit/Combine."
-- "Perform background fits to pseudo data and data control regions."
+- "Run the 2DAlphabet package"
+- "Apply normalisation systematics"
+- "Apply shape systematics"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Luminosity uncertainties affect all processes equally"
+- "Cross section uncertainties should not be applied to signal"
+- "Template morphing is used to determine shape uncertainties"
 ---
 
 # Introduction to the 2DAlphabet package
@@ -22,13 +25,19 @@ the 2DAlphabet method without having to create their own custom version of combi
 The configuration files that you will be using are located in the `BstarToTW_CMSDAS2020` repository in this path `BstarToTW_CMSDAS2020/configs_2Dalpha/`
 Take a look inside one of these files, for example: `input_dataBsUnblind16.json`
 
-The options section. What does it do? [FIXME]
+The options section contains boolean options, some of which are 2DAlphabet specific and others which map to combine.
+Of the options the important ones to note are the `blindedFit` and `blindedPlots`which keep the signal regions blinded 
+and in a normal analysis would keep this option `true` until they reached the appropriate approval stage. 
 
 The process section is basically the same as the process section in combine, but laid out in an easier to read format.
 Each process refers to a root file containing data or Monte Carlo simulated data. A `"CODE"` of > 0 means that the process is a background event
 a `"CODE"` of <=0 means that a process is a signal event. The `"SYSTEMATICS"` list contains the names of the systematic 
-uncertainties for that process. The systematic uncertainties are assigned values in the `"SYSTEMATIC"` section. 
-[FIXME] explain HISTPASS and HISTFAIL
+uncertainties for that process. The systematic uncertainties are assigned values in the `"SYSTEMATIC"` section. The
+`HISTPASS` and `HISTFAIL` refer to the pass or fail bins of a histogram. The "PASS" bin makes the signal region
+whereas the "FAIL" bin makes up the multijet control region.
+
+For more details on the sections in the configuration files, see the [2DAlphabet Documentation](https://lcorcodilos.github.io/2DAlphabet/docs/config/)
+
 
 ## Running 2DAlphabet
 
@@ -140,7 +149,7 @@ in the ttbar measurement region and signal region!
 > the final effective form of our Tpt reweighting function would be e<sup>(1.5*0.0615 -  0.5*0.0005*p<sub>T</sub>)</sup>.
 {: .testimonial}
 
-> ## Exercise
+> ## Exercise (20 min)
 > Add the Top p<sub>T</sub> uncertainties to the appropriate processes and see the changes in combine.
 > 
 > The uncertainties are already included in the section on `"SYSTEMATICS"`. However, they have not been
