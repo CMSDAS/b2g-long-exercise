@@ -1,4 +1,4 @@
---
+---
 title: "Modelling the background and signal with 2DAlphabet (a wrapper for Combine)"
 teaching: 30
 exercises: 40
