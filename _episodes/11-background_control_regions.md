@@ -72,3 +72,11 @@ QCD modeling is notoriusly hard to model. One strategy to modeling processes tha
 > > Multi-jet QCD is almost always estimated using a data-driven technique. In addition, the W+Jets process has a QCD-formed top candidates. ttbar and singletop are relatively well-modeled, however the normalization of their distributions are allowed to float in the final parameter fit.
 > {: .solution}
 {: .challenge}
+
+## Validation Regions
+
+When we obtain either a scale factor or transfer function to extrapolate from the Control Region to the Signal Region, it is often useful to have a Validation Region that lies somewhere in between these two regions where one can apply the correction to the MC and check against data to ensure good agreement. In the framework we are walking you through, the fit uses all available (non-blinded) regions to simultaneously fit the transfer function parameters, leaing no space 'between' the SRs and CRs to define a VR. 
+
+## Blinding 
+
+One thing to keep in mind when using data before settling on final signal and control region selections is the possibility of biasing one's methods by being exposed to the data. For example, one could imagine a situation where one is 'testing' methods in a signal region and then observes a 'problem' (lack of events, too many events, etc) which guides the analyzer to biased decision-making. A similar problem can occur if a control or validation region is chosen that has significant signal contamination. To avoid these problems, we 'blind' our data whenever possible. That is, we do not look at any data in the SRs, when appropriate we could also deicde to remove data if it passes a significance threshold, and ensuring the control/validation regions have little signal contamination.
