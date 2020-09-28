@@ -11,6 +11,7 @@ keypoints:
 - "We can simultaneously fit several backgrounds by defining the appropriate observables/axes, i.e. m<sub>t</sub> vs m<sub>tW</sub>."
 - "2D Alphabet is a method of fitting a polynomial function to a space (except the SR), to model the multi-jet background, and also serves as an interfae to other tools." 
 ---
+Recording files of this session are in [cernbox](https://cernbox.cern.ch/index.php/s/uibnZgUrfC0HAqn)
 
 ## Idea of 2D Alphabet
 Normally, we do a shape hunt along some observable and measure our background is near-by kintemtic regions to estimate its expected yield in the signal region. For our case, there is a clever way to do all these tasks simultaneously. Since we are scanning across m<sub>tW</sub>, with a window designated as a Signal Region, we can use all the non-window space to fit a smooth function that extrapolates over the SR window.
