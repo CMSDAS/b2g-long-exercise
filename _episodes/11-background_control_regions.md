@@ -23,6 +23,7 @@ keypoints:
 - "Validation regions are designed to lie orthgonal but between CRs and SRs, perhaps with lower target BG purity, to test the corrections extracted from the CR that will be applied to SRs."
 - "Blinding is the convention of not looking at data in the SR (or any signal-enriched selection)."
 ---
+Recording files of this session are in [cernbox](https://cernbox.cern.ch/index.php/s/uibnZgUrfC0HAqn)
 
 ## Backgrounds to the Analysis
  
