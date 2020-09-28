@@ -27,5 +27,7 @@ In summary, the fits are done on 3 years x 2 pass/fail x 2 multi-jet/ttbar (1/2-
 <img src="../fig/2DAlphabetCompare.png" alt="2DAlphabetCompare" style="width:500px"> 
 
 
-## Try Plotting in CR
-At tomorrow's sessions you will dive into using 2DAlphabet for your own selections. For now, use the exisig code in BstarToTW_CMSDAS2020/examples/ex4.py to generate your own plots with selections meant for the ttbar and multi-jet CRs. You'll need to mmodify the script and run the --select flag to make the new root files used for the plotting. As is, the script plots MC-only, can you add data to the CR plots? Use the remaining time in the session to wrap up work in previous sessions, tomorrow we will run the 2DAlphabet framework to produce our limits.
+## Exercise: Try Plotting CR and Get Familiar with 2DAlphabet
+At tomorrow's sessions you will dive into using 2DAlphabet for your own selections. For now, use the exisig code in BstarToTW_CMSDAS2020/examples/ex4.py to generate your own plots with selections meant for the ttbar and multi-jet CRs. You'll need to mmodify the script and run the --select flag to make the new root files used for the plotting. As is, the script plots MC-only, can you add data to the CR plots? 
+
+Use the remaining time in the session to wrap up work in previous sessions, tomorrow we will run the 2DAlphabet framework to produce our limits. Also try looking into the [2DAlphabet](https://github.com/lcorcodilos/2DAlphabet/blob/master/TwoDAlphabetClass.py) framework to get an idea of how the code is structured and how you will change it tomorrow. Feel free to ask the facilitators any questions you have!
