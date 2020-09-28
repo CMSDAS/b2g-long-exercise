@@ -138,11 +138,20 @@ in the ttbar measurement region and signal region!
 > 
 > The uncertainties are already included in the section on `"SYSTEMATICS"`. However, they have not been
 > added to the individual processes. To start this exercise, add the `Tpt-alpha` and `Tpt-beta` uncertainties
-> to the appropriate processes. Which processes should these uncertainties be added to? Then 
+> to the appropriate processes. Which processes should these uncertainties be added to? Then add in the
+> the uncertainties to the appropriate processes and rerun the 2DAlphabet. Compare the combine cards
+> using `diff` to see the changes before and after adding in the top p<sub>T</sub> uncertainty.
+> 
+> > ## Solution
+> > 
+> {: .solution}
+{: .challenge}
 
 
 > ## Bonus Exercise: Trigger Efficiency uncertainty
-
+>
+>
+{: .callout}
 
 
 
