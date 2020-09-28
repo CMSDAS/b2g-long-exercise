@@ -110,6 +110,13 @@ The cross section uncertainty is another symmetric uncertainty added to each Mon
 > {: .solution}
 {: .challenge}
 
+With just the luminosity and cross section uncertainties, we only have normalization uncertainties accounted 
+for and there are certainly uncertainties which affect the shapes of distributions (our simulation is not perfect 
+in many ways). These can be accounted for via vertical template interpolation (also called “template morphing”). 
+The high-level explanation is that you can provide an “up” shape and a “down” shape in addition to the “nominal” 
+and the algorithm will map “up” to +1 sigma and “down” to -1 sigma on a Gaussian constraint. The first of these
+"shape" uncertainties is the Top p<sub>T</sub> uncertainty.
+
 ## Top p<sub>T</sub> uncertainties
 
 The TOP group has recommendations for how to account for consistent but not-understood disagreements in the 
