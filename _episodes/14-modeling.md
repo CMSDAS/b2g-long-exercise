@@ -65,7 +65,7 @@ python run_MLfit.py configs_2Dalpha/input_dataBsUnblind16.json --tag=bsTest
 This will create some output plots and combine cards. The output is stored in `bsTest/SR16/`.
 
 > ## Tip
-> If running with the configuration files for all three years, you can append --fullRun2 and
+> If running with the configuration files for all three years, you can append `--fullRun2` and
 > that will add together the 2016, 2017, and 2018 results for the signal 
 > region and ttbar measurement region separately so that there are fewer plots to view.
 {: .callout}
@@ -118,7 +118,7 @@ The cross section uncertainty is another symmetric uncertainty added to each Mon
 > ## Discuss (5 min)
 > Should the signal Monte Carlo sample have a cross section uncertainty?
 > > ## Solution
-> > This is because the “cross section” of the signal is exactly what we want to fit for (ie. the parameter 
+> > No. This is because the “cross section” of the signal is exactly what we want to fit for (ie. the parameter 
 > > of interest/POI/r/mu)! One might ask then why we assign an uncertainty from the luminosity to the signal 
 > > when the luminosity is just another normalization uncertainty. The answer is that the luminosity uncertainty 
 > > is fundamentally different from the cross section uncertainties because it is correlated across all of 
