@@ -72,7 +72,10 @@ This will create some output plots and combine cards. The output is stored in `b
 
 # Uncertainties
 
-Write some stuff about uncertainties. [FIXME]
+There are two types of systematic uncertainties that can be added to combine: normalisation uncertainties
+and shape uncertainties. Since this is a simplified analysis, we consider two normalisation uncertainties
+(luminosity and cross section) and one shape uncertainty (Top p<sub>T</sub> re-weighting) with one optional
+bonus exercise.
 
 ## Where to add the uncertainties
 
@@ -216,6 +219,5 @@ in the ttbar measurement region and signal region!
 > This exercise is a bonus and not necessary to continue on. 
 >
 {: .callout}
-
 
 
