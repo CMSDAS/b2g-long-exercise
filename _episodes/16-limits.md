@@ -7,12 +7,12 @@ questions:
 - "Once I unblind, did we find new physics? If not, what can we say?"
 objectives:
 - "Use the 2DAlphabet package to set limits"
-- "Provide expected senstivity (upper cross-section limmits) before unblinding as a function of resonance mass."
+- "Provide expected sensitivity (upper cross-section limits) before unblinding as a function of resonance mass."
 - "Unblind and compare observed to expected limits."
 keypoints:
 - "We can define expected sensitivity of an analysis with simulation-only by assuming the data expected will be exactly what the background estimation predicts."
 - "We combine the systematic variations as a 1/2-sigma envelope around nominal expectation to quantify the confidence of our measurement."
-- "After unblinding, if we have a down-fluctuation of data the expected exclusion appears stronger and vice-versa with up-fluctionations and apparently weak exclusions."
+- "After unblinding, if we have a down-fluctuation of data the expected exclusion appears stronger and vice-versa with up-fluctuations and apparently weak exclusions."
 ---
 
 # Limits!
@@ -26,7 +26,7 @@ The limit setting program for 2DAlphabet needs to be run for each mass point und
 The fitting program must be run on each year before the limit program can be run. So make sure that you completed
 the exercise from the Modeling exercise that uses `run_MLfit.py`.
 
-> # Make Limits
+> ## Make Limits
 >  
 > First run the limit program for each of the mass points. There are 19 mass points between 1400 and 4000 (1400, 1600, ...),
 > so it might be a good idea for each of you to choose 4 mass points to do and then combine the results together.
@@ -66,7 +66,7 @@ the exercise from the Modeling exercise that uses `run_MLfit.py`.
 > 
 {: .challenge}
 
-> # Understanding the limits
+> ## Understanding the limits
 > Did you discover new physics? How do you know?
 >
 {: .testimonial}
