@@ -30,11 +30,12 @@ Of the options the important ones to note are the `blindedFit` and `blindedPlots
 and in a normal analysis would keep this option `true` until they reached the appropriate approval stage. 
 
 The process section is basically the same as the process section in combine, but laid out in an easier to read format.
-Each process refers to a root file containing data or Monte Carlo simulated data. A `"CODE"` of > 0 means that the process is a background event
-a `"CODE"` of <=0 means that a process is a signal event. The `"SYSTEMATICS"` list contains the names of the systematic 
+Each process refers to a root file containing data or Monte Carlo simulation. A `"CODE"` of 1 means that the process 
+is the data, a `"CODE"` of 2 means that the process is a background, and
+a `"CODE"` of 0 means that a process is a signal event. The `"SYSTEMATICS"` list contains the names of the systematic 
 uncertainties for that process. The systematic uncertainties are assigned values in the `"SYSTEMATIC"` section. The
-`HISTPASS` and `HISTFAIL` refer to the pass or fail bins of a histogram. The "PASS" bin makes the signal region
-whereas the "FAIL" bin makes up the multijet control region.
+`HISTPASS` and `HISTFAIL` refer to the pass or fail bins of a histogram. The "PASS" bin indicates the signal region
+whereas the "FAIL" bin indicates the multijet control region.
 
 For more details on the sections in the configuration files, see the [2DAlphabet Documentation](https://lcorcodilos.github.io/2DAlphabet/docs/config/)
 
@@ -58,13 +59,14 @@ Now run one of the configuration files.
 ~~~bash
 cmsenv
 # now run one of the files 
-python run_MLfit.py configs_2Dalpha/input_dataBsUnblind.json --tag=bsTest
+python run_MLfit.py configs_2Dalpha/input_dataBsUnblind16.json --tag=bsTest
 ~~~
 
 This will create some output plots and combine cards. The output is stored in `bsTest/SR16/`.
 
 > ## Tip
-> You can append --fullRun2 and that will add together the 2016, 2017, and 2018 results for the signal 
+> If running with the configuration files for all three years, you can append --fullRun2 and
+> that will add together the 2016, 2017, and 2018 results for the signal 
 > region and ttbar measurement region separately so that there are fewer plots to view.
 {: .callout}
 
@@ -95,8 +97,9 @@ For the moment, let's just look at our symmetric uncertainties and later we will
 
 ## Luminosity uncertainties
 
-As we saw in the previous example, the luminosity is a symmetric uncertainty. Each year, the uncertainty on the luminosity changes. This
-is because the measurement of delivered luminosity is per year.
+As we saw in the previous example, the luminosity is a symmetric uncertainty. Each year, the amount of data collected ("luminosity")
+is measured. This measurement has some uncertainty which means the uncertainty changes for each year and is uncorrelated
+between the years.
 
 
 > ## Discuss (5 min)
